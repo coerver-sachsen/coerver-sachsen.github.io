@@ -1,0 +1,1435 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Coerver Coaching Sachsen</title>
+<meta name="description" content="Coerver Coaching Sachsen: Fußballcamps und Techniktraining für Kinder von 5 bis 14 Jahren in Dresden und ganz Sachsen.">
+<meta name="theme-color" content="#0b0c0a">
+<link rel="icon" href="bilder/logo-badge.webp" type="image/webp">
+<link rel="preload" href="schriften/barlow-condensed-latin-800-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="bilder/foto-gruppe-1166.webp" as="image" imagesrcset="bilder/foto-gruppe-640.webp 640w, bilder/foto-gruppe-1166.webp 1166w" imagesizes="100vw">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsOrganization","name":"Coerver Coaching Sachsen","sport":"Fußball",
+ "url":"https://coerver-sachsen.de/","logo":"https://coerver-sachsen.de/bilder/logo-badge.webp",
+ "description":"Fußballcamps und Techniktraining nach der Coerver Methode für Kinder von 5 bis 14 Jahren in Dresden und ganz Sachsen.",
+ "areaServed":"Sachsen","sameAs":["https://www.instagram.com/coerver.sachsen/","https://www.facebook.com/coerver.ost"]}
+</script>
+<style>
+/* ===== Schriften (lokal gespeichert, keine Verbindung zu Google Fonts) ===== */
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:600;font-display:swap;src:url(schriften/barlow-condensed-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url(schriften/barlow-condensed-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-style:italic;font-weight:700;font-display:swap;src:url(schriften/barlow-condensed-latin-700-italic.woff2) format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:800;font-display:swap;src:url(schriften/barlow-condensed-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-style:italic;font-weight:800;font-display:swap;src:url(schriften/barlow-condensed-latin-800-italic.woff2) format("woff2")}
+@font-face{font-family:"Barlow";font-style:normal;font-weight:400;font-display:swap;src:url(schriften/barlow-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Barlow";font-style:normal;font-weight:500;font-display:swap;src:url(schriften/barlow-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Barlow";font-style:normal;font-weight:600;font-display:swap;src:url(schriften/barlow-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Barlow";font-style:normal;font-weight:700;font-display:swap;src:url(schriften/barlow-latin-700-normal.woff2) format("woff2")}
+
+:root{
+  --black:#0b0c0a; --ink:#16181a; --lime:#8db31e; --lime-hi:#a3c92a; --lime-dark:#5f7b0f; --lime-soft:#eef5d6;
+  --forest:#0f6b34; --paper:#f6f7f2; --white:#fff; --muted:#585d54; --line:#e2e5da; --alert:#b3261e;
+  --head:"Barlow Condensed",Impact,"Arial Narrow",sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:6px; --r-lg:12px;
+  --header-h:82px;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px);-webkit-text-size-adjust:100%}
+body{font-family:var(--body);font-size:17px;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+button{font:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--head);text-transform:uppercase;line-height:.95;letter-spacing:.3px;text-wrap:balance}
+h2{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800}
+h3{font-size:1.5rem;font-weight:700}
+p{max-width:65ch}
+.kicker{font-family:var(--head);font-style:italic;font-weight:700;font-size:1.15rem;color:var(--lime-dark);margin-bottom:6px}
+.muted{color:var(--muted)}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ph{display:inline-block;font-size:.8em;font-weight:700;background:#fff3c4;color:#6b5a00;padding:1px 7px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--lime);color:var(--black);padding:10px 16px;border-radius:var(--r);font-weight:700;text-decoration:none}
+.skip:focus{top:12px}
+
+/* ===== Knöpfe ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--lime);color:var(--black);font-family:var(--head);font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:.6px;text-decoration:none;padding:13px 26px;border-radius:var(--r);border:0;cursor:pointer;transition:background .2s,transform .2s;min-height:48px;text-align:center}
+.btn:hover{background:var(--lime-hi);transform:translateY(-1px)}
+.btn:disabled,.btn[aria-disabled="true"]{background:#c9ccc2;color:#5b5f57;cursor:not-allowed;transform:none}
+.btn.dark{background:var(--black);color:#fff}
+.btn.dark:hover{background:#25282a}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn.line:hover{background:var(--ink);color:#fff}
+.btn.small{font-size:1rem;padding:9px 16px;min-height:40px}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* ===== Leiste oben ===== */
+.usp{background:var(--black);color:#fff;font-size:.82rem;font-weight:600;letter-spacing:.3px}
+.usp ul{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;gap:6px 28px;padding-block:9px}
+.usp li{display:flex;align-items:center;gap:8px}
+.usp li::before,.checks li::before{content:"";flex:none;border-radius:50%;background:var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='%230b0c0a' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/80% no-repeat}
+.usp li::before{width:14px;height:14px}
+@media (max-width:640px){.usp li:nth-child(n+3){display:none}}
+
+/* ===== Kopfzeile ===== */
+header.site{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:var(--header-h)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;min-width:0}
+.brand img{height:58px;width:auto}
+.brand .tag{display:flex;flex-direction:column;line-height:1}
+.brand .tag strong{font-family:var(--head);font-weight:800;font-size:1.45rem;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap}
+.brand .tag span{font-family:var(--head);font-style:italic;font-weight:700;font-size:1rem;color:var(--lime-dark);letter-spacing:.5px;margin-top:3px}
+.menu{display:flex;gap:2px;list-style:none;align-items:center}
+.menu a{text-decoration:none;font-family:var(--head);font-weight:700;font-size:1.12rem;text-transform:uppercase;letter-spacing:.5px;padding:10px 12px;position:relative;display:block}
+.menu a:not(.btn)::after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:3px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.menu a:not(.btn):hover::after,.menu a[aria-current="page"]::after{transform:scaleX(1)}
+.menu .btn{margin-left:8px;padding:11px 20px}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:12px;margin-right:-12px}
+.burger span{display:block;width:26px;height:2px;background:var(--black);margin:6px 0;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+@media (max-width:1040px){
+  :root{--header-h:70px}
+  .burger{display:block}
+  .menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;align-items:stretch;padding:6px 20px 20px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(11,12,10,.12);max-height:calc(100vh - var(--header-h));overflow:auto}
+  .menu.open{display:flex}
+  .menu a{padding:13px 2px;border-bottom:1px solid var(--line)}
+  .menu a:not(.btn)::after{display:none}
+  .menu .btn{margin:14px 0 0;border-bottom:0}
+  .brand img{height:46px}
+  .brand .tag strong{font-size:1.25rem}
+}
+
+/* ===== Banner mit Foto ===== */
+.hero{position:relative;overflow:hidden;color:#fff;background:var(--black);isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg,rgba(11,12,10,.94) 0%,rgba(11,12,10,.82) 38%,rgba(13,40,22,.55) 70%,rgba(15,107,52,.35) 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding-block:76px 84px;min-height:min(640px,82vh)}
+.hero-text{min-width:0}
+.hero .sub{font-family:var(--head);font-style:italic;font-weight:700;font-size:1.3rem;color:var(--lime);margin-bottom:14px}
+.hero h1{font-size:clamp(3rem,8vw,6.2rem);font-weight:800;font-style:italic;line-height:.88}
+.hero h1 span{display:block;color:var(--lime)}
+.hero p.lead{font-size:1.14rem;color:rgba(255,255,255,.88);margin:22px 0 30px;max-width:46ch}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{display:grid;place-items:center}
+.hero-art img{width:min(400px,100%);filter:drop-shadow(0 30px 50px rgba(0,0,0,.55));animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px) rotate(-2deg)}}
+.countdown{display:flex;gap:10px;margin-top:34px;flex-wrap:wrap;align-items:center}
+.countdown .label{font-size:.9rem;font-weight:600;color:rgba(255,255,255,.8);width:100%}
+.countdown .label a{color:var(--lime);text-underline-offset:3px}
+.countdown .cell{background:rgba(11,12,10,.55);border:1px solid rgba(255,255,255,.18);border-radius:var(--r);padding:8px 12px;text-align:center;min-width:68px;backdrop-filter:blur(4px)}
+.countdown b{display:block;font-family:var(--head);font-size:2rem;line-height:1;font-variant-numeric:tabular-nums}
+.countdown small{font-size:.75rem;color:rgba(255,255,255,.75)}
+.countdown .live::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--black);animation:puls 1.4s ease-in-out infinite}
+.countdown .live{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:800;font-size:1.4rem;text-transform:uppercase;background:var(--lime);color:var(--black);padding:8px 16px;border-radius:var(--r)}
+@media (max-width:820px){
+  .hero::before{background:linear-gradient(180deg,rgba(11,12,10,.55) 0%,rgba(11,12,10,.86) 42%,rgba(11,12,10,.95) 100%)}
+  .hero .wrap{grid-template-columns:1fr;padding-block:36px 52px;min-height:0;gap:20px}
+  .hero-art{order:-1;justify-items:start}
+  .hero-art img{width:min(170px,46vw)}
+  .countdown .cell{min-width:62px;padding:7px 8px}
+}
+@media (max-width:420px){.hero .actions .btn{flex:1 1 100%}}
+
+/* ===== Stadionbande (Laufschrift) ===== */
+.bande{background:var(--black);border-block:3px solid var(--lime);overflow:hidden;white-space:nowrap;position:relative}
+.bande .track{display:inline-flex;animation:laufen 38s linear infinite;padding-block:12px}
+.bande span{font-family:var(--head);font-style:italic;font-weight:800;font-size:1.55rem;text-transform:uppercase;color:var(--lime);padding-inline:22px;letter-spacing:.5px;display:inline-flex;align-items:center;gap:44px}
+.bande span::after{content:"";width:10px;height:10px;background:#fff;transform:rotate(45deg);display:inline-block}
+@keyframes laufen{to{transform:translateX(-50%)}}
+
+/* ===== Einleitung ===== */
+.intro{padding-block:80px 70px;text-align:center}
+.intro .wrap{display:flex;flex-direction:column;align-items:center;gap:20px}
+.intro p{color:var(--muted);font-size:1.12rem}
+.intro .wordmark{width:min(360px,80%)}
+.intro h2 em{font-style:italic;color:var(--lime-dark)}
+
+/* ===== Fünf Bausteine ===== */
+.pillars{background:var(--paper);padding-block:80px}
+.pillars .head{display:flex;justify-content:space-between;align-items:end;gap:20px 40px;flex-wrap:wrap;margin-bottom:40px}
+.pillars .head p{max-width:46ch}
+.pillar-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;list-style:none}
+.pillar{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:26px 18px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px}
+.pillar img{width:104px;height:104px;object-fit:contain;transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.pillar:hover img{transform:rotate(-12deg) scale(1.06)}
+.pillar p{font-size:.95rem;color:var(--muted)}
+@media (max-width:1000px){.pillar-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.pillar-grid{grid-template-columns:repeat(2,1fr);gap:12px}.pillar{padding:20px 12px}.pillar img{width:76px;height:76px}.pillar h3{font-size:1.3rem}}
+@media (max-width:360px){.pillar-grid{grid-template-columns:1fr}}
+
+/* ===== Anmeldeband mit Platz-Foto ===== */
+.signup{position:relative;color:#fff;background:var(--black);overflow:hidden;isolation:isolate}
+.signup .bg{position:absolute;inset:0;z-index:-2}
+.signup .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.signup::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,12,10,.9),rgba(11,12,10,.7) 55%,rgba(11,12,10,.45))}
+.signup .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:36px;align-items:center;padding-block:54px}
+.signup .wiggle{width:104px;animation:wackeln 4.5s ease-in-out infinite;transform-origin:50% 90%;filter:drop-shadow(0 14px 22px rgba(0,0,0,.5))}
+@keyframes wackeln{0%,62%,100%{transform:rotate(0)}68%{transform:rotate(-9deg) scale(1.04)}76%{transform:rotate(7deg)}84%{transform:rotate(-4deg)}92%{transform:rotate(2deg)}}
+.signup h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+.signup h2 span{color:var(--lime)}
+.signup p{color:rgba(255,255,255,.85);margin-top:8px}
+@media (max-width:760px){.signup .wrap{grid-template-columns:1fr;text-align:center;justify-items:center;gap:22px;padding-block:46px}.signup .wiggle{width:84px}}
+
+/* ===== Bild/Text-Reihen ===== */
+.rows{padding-block:90px;display:flex;flex-direction:column;gap:96px}
+.row{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.row.flip .media{order:2}
+.media{position:relative;min-width:0}
+.media .photo{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3;background:var(--lime-soft)}
+.media .photo img{width:100%;height:100%;object-fit:cover}
+.sticker{position:absolute;pointer-events:none;filter:drop-shadow(0 16px 24px rgba(0,0,0,.35))}
+.sticker.stempel{width:min(46%,250px);right:-28px;bottom:-34px;background:var(--white);padding:10px 14px;border-radius:14px;animation:stempel 7s ease-in-out infinite}
+@keyframes stempel{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(4deg) translateY(-6px)}}
+.sticker.drehen{width:min(34%,170px);left:-26px;top:-30px;animation:drehen 26s linear infinite}
+@keyframes drehen{to{transform:rotate(360deg)}}
+.row .text{min-width:0;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.row .text p{color:var(--muted)}
+.checks{list-style:none;display:flex;flex-direction:column;gap:10px}
+.checks li{display:flex;gap:12px;font-weight:500;align-items:flex-start}
+.checks li::before{width:20px;height:20px;margin-top:3px}
+.checks li strong{font-weight:700}
+@media (max-width:860px){
+  .rows{padding-block:64px;gap:76px}
+  .row{grid-template-columns:1fr;gap:34px}
+  .row.flip .media{order:0}
+  .sticker.stempel{right:-6px;bottom:-26px;width:42%;padding:6px 9px}
+  .sticker.drehen{left:-6px;top:-22px;width:28%}
+}
+
+/* ===== Termine ===== */
+.camps{background:var(--paper);padding-block:90px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font-family:var(--head);font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:.5px;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--white);color:var(--ink);cursor:pointer;min-height:40px}
+.filters button[aria-pressed="true"]{background:var(--black);border-color:var(--black);color:#fff}
+.camp-list{display:flex;flex-direction:column;gap:14px;list-style:none}
+.camp{position:relative;display:grid;grid-template-columns:104px 1fr auto;gap:24px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px;transition:border-color .2s,box-shadow .2s}
+.camp:hover{border-color:var(--lime);box-shadow:0 10px 26px rgba(11,12,10,.08)}
+.camp .date{background:var(--black);color:#fff;border-radius:var(--r);text-align:center;padding:12px 6px;font-family:var(--head);text-transform:uppercase}
+.camp .date b{display:block;font-size:2.2rem;line-height:1;color:var(--lime);font-variant-numeric:tabular-nums}
+.camp .date span{font-size:.95rem;letter-spacing:1px}
+.camp .info{min-width:0}
+.camp .type{font-family:var(--head);font-style:italic;font-weight:700;font-size:1.05rem;color:var(--lime-dark)}
+.camp h3{margin:2px 0 8px}
+.camp h3 a{text-decoration:none}
+.camp h3 a::after{content:"";position:absolute;inset:0;border-radius:var(--r)}
+.camp .meta{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.93rem;color:var(--muted)}
+.camp .meta span{display:inline-flex;align-items:center;gap:6px}
+.camp .meta svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;flex:none}
+.camp .side{display:flex;flex-direction:column;align-items:flex-end;gap:10px;text-align:right}
+.camp .price{font-family:var(--head);font-weight:800;font-size:1.8rem;line-height:1}
+.camp .price small{font-size:.9rem;color:var(--muted);font-weight:600}
+.camp .go{display:inline-flex;align-items:center;gap:4px;font-weight:700;font-size:.9rem;color:var(--forest)}
+.camp .go svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.4;transition:transform .2s}
+.camp:hover .go svg{transform:translateX(3px)}
+.camp.past .go{color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--lime-soft);color:var(--forest);white-space:nowrap}
+.chip.live{background:var(--lime);color:var(--black)}
+.chip.live::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--black);animation:puls 1.4s ease-in-out infinite}
+@keyframes puls{50%{opacity:.25}}
+.chip.soon{background:#fff1c7;color:#6b5000}
+.chip.full{background:#fbe2df;color:var(--alert)}
+.chip.past{background:#ecede8;color:var(--muted)}
+.camp.past{background:#fbfbf8}
+.camp.past .date{background:#62665d}
+.camp.past .date b{color:#d9dccf}
+.camp.past h3,.camp.past .price{color:#62665d}
+.past-title{margin:40px 0 14px;font-size:1.3rem;color:var(--muted)}
+.empty{padding:28px;border:1.5px dashed var(--line);border-radius:var(--r);color:var(--muted);background:var(--white)}
+.skeleton{height:110px;border-radius:var(--r);background:linear-gradient(90deg,#eceee6 0%,#f7f8f3 50%,#eceee6 100%);background-size:200% 100%;animation:schimmer 1.2s linear infinite}
+@keyframes schimmer{to{background-position:-200% 0}}
+@media (max-width:720px){
+  .camp{grid-template-columns:76px 1fr;gap:14px 16px;padding:16px}
+  .camp .date{padding:10px 4px}
+  .camp .date b{font-size:1.8rem}
+  .camp .date span{font-size:.8rem}
+  .camp h3{font-size:1.3rem}
+  .camp .side{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:12px}
+  .camp .side .price{margin-left:auto;white-space:nowrap}
+  .camp .go-t{display:none}
+  .camp .go svg{width:22px;height:22px}
+}
+
+/* ===== News ===== */
+.news{padding-block:90px}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;list-style:none}
+.news-item{border-top:4px solid var(--lime);padding-top:18px;display:flex;flex-direction:column;gap:8px}
+.news-item time{font-weight:700;font-size:.9rem;color:var(--muted)}
+.news-item h3{font-size:1.45rem}
+.news-item p{color:var(--muted)}
+.news-item a.more{font-weight:700;color:var(--forest);text-underline-offset:3px;margin-top:auto}
+@media (max-width:860px){.news-grid{grid-template-columns:1fr;gap:28px}}
+
+/* ===== Fotos-Hinweis ===== */
+.fotoband{background:var(--lime);color:var(--black)}
+.fotoband .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;padding-block:34px}
+.fotoband .stack{display:flex}
+.fotoband .stack img{width:82px;height:82px;object-fit:cover;border-radius:var(--r);border:3px solid var(--white);box-shadow:0 8px 18px rgba(0,0,0,.18)}
+.fotoband .stack img:nth-child(1){transform:rotate(-7deg)}
+.fotoband .stack img:nth-child(2){transform:rotate(4deg) translateY(-4px);margin-left:-26px}
+.fotoband .stack img:nth-child(3){transform:rotate(-2deg);margin-left:-26px}
+.fotoband h2{font-size:clamp(1.7rem,3.4vw,2.4rem)}
+.fotoband p{font-weight:500}
+@media (max-width:760px){.fotoband .wrap{grid-template-columns:1fr;gap:18px}.fotoband .btn{justify-self:start}}
+
+/* ===== FAQ ===== */
+.faq{background:var(--paper);padding-block:90px}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}
+.faq details{background:var(--white);border:1px solid var(--line);border-radius:var(--r);margin-bottom:10px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 22px;font-weight:700;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--head);font-size:1.7rem;line-height:.8;color:var(--lime-dark);transition:transform .25s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 22px 18px;color:var(--muted)}
+@media (max-width:820px){.faq .wrap{grid-template-columns:1fr;gap:24px}.faq{padding-block:64px}}
+
+/* ===== Kontakt ===== */
+.contact{padding-block:90px}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.ways{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.way{display:flex;gap:14px;align-items:center;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r);text-decoration:none;transition:border-color .2s}
+a.way:hover{border-color:var(--lime)}
+.way .ic{width:44px;height:44px;border-radius:50%;background:var(--lime-soft);display:grid;place-items:center;flex:none}
+.way .ic svg{width:20px;height:20px;stroke:var(--forest);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.way div{min-width:0}
+.way small{display:block;font-size:.85rem;color:var(--muted);font-weight:600}
+.way strong{overflow-wrap:anywhere}
+form.kontakt{display:flex;flex-direction:column;gap:14px;background:var(--paper);padding:28px;border-radius:var(--r-lg)}
+form.kontakt h3{margin-bottom:4px}
+label{font-weight:600;font-size:.92rem;display:flex;flex-direction:column;gap:6px}
+input,textarea,select{font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--line);border-radius:var(--r);background:var(--white);color:var(--ink);width:100%}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--lime);box-shadow:0 0 0 3px rgba(141,179,30,.25)}
+textarea{resize:vertical;min-height:120px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-note{font-size:.95rem;font-weight:600;border-radius:var(--r);padding:12px 14px}
+.form-note.ok{background:var(--lime-soft);color:var(--forest)}
+.form-note.err{background:#fbe2df;color:var(--alert)}
+.small{font-size:.85rem;color:var(--muted)}
+.small a{color:inherit}
+@media (max-width:820px){.contact .wrap{grid-template-columns:1fr;gap:34px}.contact{padding-block:64px}form.kontakt{padding:22px 18px}}
+
+/* ===== Social Media und Partner ===== */
+.connect{padding-block:80px 70px;text-align:center;border-top:1px solid var(--line)}
+.connect .wrap{display:flex;flex-direction:column;align-items:center;gap:26px}
+.connect h2{font-family:var(--head);font-weight:600;font-style:normal;font-size:clamp(2rem,4.5vw,2.8rem);color:var(--lime-dark);letter-spacing:1px}
+.connect .muted{margin-top:-14px}
+.logo-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:22px 34px;list-style:none}
+.logo-row a{display:block;border-radius:var(--r);transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.logo-row a:hover{transform:translateY(-4px) scale(1.04)}
+.logo-row.square img{width:86px;height:86px;border-radius:18px}
+.logo-row.wide{flex-direction:column;gap:18px}
+.logo-row.wide img{height:auto}
+.logo-row .tsb{width:min(360px,82vw)}
+.logo-row .elf{width:min(320px,74vw)}
+.logo-row .moin{width:86px;height:86px;border-radius:18px}
+.partner-label{font-size:.85rem;color:var(--muted);font-weight:600;margin-bottom:-12px}
+@media (max-width:480px){.logo-row.square{gap:18px}.logo-row.square img{width:72px;height:72px;border-radius:15px}}
+
+/* ===== Fußballcamps in Sachsen (Suchbegriffe, sichtbar) ===== */
+.seo-text{background:var(--paper);padding-block:34px;border-top:1px solid var(--line)}
+.seo-text h2{font-size:1.15rem;font-weight:700;font-style:normal;color:var(--muted);margin-bottom:8px}
+.seo-text p{font-size:.88rem;color:var(--muted);max-width:none;line-height:1.7}
+
+/* ===== Footer ===== */
+footer{background:var(--black);color:rgba(255,255,255,.8);font-size:.95rem}
+footer .wrap.cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-block:60px 40px}
+footer h4{font-family:var(--head);text-transform:uppercase;font-size:1.2rem;color:#fff;margin-bottom:12px;letter-spacing:.5px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--lime)}
+footer .wordmark{width:220px;margin-bottom:16px;background:#fff;padding:10px 14px;border-radius:var(--r)}
+.legal{border-top:1px solid rgba(255,255,255,.12);padding-block:18px;font-size:.85rem;color:rgba(255,255,255,.6)}
+.legal .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:860px){footer .wrap.cols{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){footer .wrap.cols{grid-template-columns:1fr;gap:28px}}
+
+/* ===== Unterseiten ===== */
+.view{min-height:60vh}
+.page{padding-block:44px 90px}
+.back{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;color:var(--muted);margin-bottom:24px;padding:6px 0}
+.back:hover{color:var(--ink)}
+.back svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.2}
+.page-title{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;font-style:italic;line-height:.9}
+
+/* Camp-Detail */
+.detail-hero{position:relative;color:#fff;background:var(--black);overflow:hidden;isolation:isolate}
+.detail-hero .bg{position:absolute;inset:0;z-index:-2}
+.detail-hero .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.detail-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,12,10,.94),rgba(11,12,10,.75) 65%,rgba(11,12,10,.55))}
+.detail-hero .wrap{padding-block:34px 56px}
+.detail-hero .back{color:rgba(255,255,255,.75)}
+.detail-hero .back:hover{color:#fff}
+.detail-hero .type{font-family:var(--head);font-style:italic;font-weight:700;font-size:1.3rem;color:var(--lime);margin-bottom:8px}
+.detail-hero .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.detail-grid{display:grid;grid-template-columns:1fr 360px;gap:50px;align-items:start;padding-block:56px 90px}
+.detail-main{display:flex;flex-direction:column;gap:44px;min-width:0}
+.detail-main h2{font-size:clamp(1.9rem,4vw,2.5rem);margin-bottom:16px}
+.included{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;list-style:none}
+.included li{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:var(--r);background:var(--white)}
+.included .ic{width:46px;height:46px;border-radius:50%;background:var(--black);display:grid;place-items:center;flex:none}
+.included .ic svg{width:24px;height:24px;stroke:var(--lime);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.included strong{display:block;font-family:var(--head);text-transform:uppercase;font-size:1.2rem;line-height:1.1}
+.included span{font-size:.93rem;color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.product{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:22px 14px 18px;border:1.5px solid var(--line);border-radius:var(--r-lg);background:var(--white);cursor:pointer;transition:border-color .2s,background .2s}
+.product svg{width:64px;height:64px;transition:transform .4s cubic-bezier(.3,1.6,.5,1)}
+.product:hover svg{transform:translateY(-4px) rotate(-6deg)}
+.product strong{font-family:var(--head);text-transform:uppercase;font-size:1.3rem;line-height:1}
+.product .p{font-family:var(--head);font-weight:800;font-size:1.5rem;color:var(--forest)}
+.product input{position:absolute;opacity:0;pointer-events:none}
+.product .tick{font-size:.82rem;font-weight:700;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+.product .tick::before{content:"";width:18px;height:18px;border:2px solid #b9bdb1;border-radius:4px;background:var(--white) center/80% no-repeat}
+.product:has(input:checked){border-color:var(--lime);background:var(--lime-soft)}
+.product:has(input:checked) .tick{color:var(--forest)}
+.product:has(input:checked) .tick::before{border-color:var(--forest);background-color:var(--lime);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='%230b0c0a' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.product:has(input:focus-visible){outline:3px solid var(--lime);outline-offset:3px}
+.product.static{cursor:default}
+.prod-note{margin-top:14px;font-size:.95rem;color:var(--muted)}
+.facts{position:sticky;top:calc(var(--header-h) + 20px);background:var(--paper);border-radius:var(--r-lg);padding:26px;display:flex;flex-direction:column;gap:18px;border:1px solid var(--line)}
+.facts dl{display:flex;flex-direction:column;gap:14px}
+.facts dl div{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start}
+.facts svg{width:20px;height:20px;stroke:var(--forest);fill:none;stroke-width:2;margin-top:3px}
+.facts dt{font-size:.82rem;font-weight:700;color:var(--muted)}
+.facts dd{font-weight:600}
+.facts dd a{color:var(--forest);text-underline-offset:3px}
+.facts .big-price{font-family:var(--head);font-weight:800;font-size:2.6rem;line-height:1;border-top:1px solid var(--line);padding-top:18px}
+.facts .big-price small{font-size:1rem;color:var(--muted);font-weight:600}
+.facts .btn{width:100%}
+.facts .sum{font-size:.92rem;color:var(--muted)}
+@media (max-width:960px){.detail-grid{grid-template-columns:1fr;gap:36px;padding-block:36px 64px}.facts{position:static;order:-1}}
+@media (max-width:640px){.included{grid-template-columns:1fr}.products{grid-template-columns:1fr 1fr 1fr;gap:10px}.product{padding:16px 6px 14px}.product svg{width:48px;height:48px}.product strong{font-size:1.05rem}.product .p{font-size:1.2rem}}
+@media (max-width:380px){.products{grid-template-columns:1fr 1fr}}
+
+/* Fotos */
+.foto-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-top:8px}
+.code-form{display:flex;gap:10px;flex-wrap:wrap;background:var(--paper);padding:18px;border-radius:var(--r-lg);border:1px solid var(--line)}
+.code-form label{flex:1 1 220px}
+.code-form input{text-transform:uppercase;letter-spacing:1.5px;font-weight:700;font-size:1.15rem}
+.code-form .btn{align-self:flex-end}
+.foto-info{margin-top:36px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:18px}
+.foto-info h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.zip-area{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.progress{width:min(280px,100%);height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--forest);transition:width .2s}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:22px;list-style:none}
+.tile{position:relative;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;background:#eceee6}
+.tile button{all:unset;cursor:zoom-in;position:absolute;inset:0}
+.tile button:focus-visible{outline:3px solid var(--lime);outline-offset:-3px}
+.tile img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s,transform .4s}
+.tile img.da{opacity:1}
+.tile:hover img.da{transform:scale(1.03)}
+.tile.laedt{background:linear-gradient(90deg,#eceee6 0%,#f7f8f3 50%,#eceee6 100%);background-size:200% 100%;animation:schimmer 1.2s linear infinite}
+.tile .fail{position:absolute;inset:0;display:grid;place-items:center;font-size:.85rem;color:var(--muted);padding:10px;text-align:center}
+.privacy-note{margin-top:30px;padding:16px 18px;border-left:4px solid var(--lime);background:var(--paper);font-size:.95rem;color:var(--muted);max-width:none}
+@media (max-width:820px){.foto-head{grid-template-columns:1fr;gap:20px}.zip-area{align-items:flex-start}.foto-info{align-items:flex-start;flex-direction:column}}
+@media (max-width:520px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px}.code-form .btn{flex:1 1 100%}}
+
+/* Großansicht */
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(11,12,10,.95);display:grid;grid-template-rows:auto 1fr auto;color:#fff}
+.lightbox[hidden]{display:none}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;padding-top:max(12px,env(safe-area-inset-top))}
+.lb-top span{font-size:.92rem;color:rgba(255,255,255,.75);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lb-stage{position:relative;display:grid;place-items:center;min-height:0;padding:0 64px}
+.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;border-radius:4px;user-select:none}
+.lb-btn{background:rgba(255,255,255,.12);border:0;color:#fff;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;cursor:pointer;flex:none}
+.lb-btn:hover{background:rgba(255,255,255,.22)}
+.lb-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.lb-prev,.lb-next{position:absolute;top:50%;transform:translateY(-50%)}
+.lb-prev{left:10px}.lb-next{right:10px}
+.lb-bottom{display:flex;justify-content:center;gap:12px;padding:14px 16px;padding-bottom:max(16px,env(safe-area-inset-bottom))}
+@media (max-width:640px){.lb-stage{padding:0 8px}.lb-prev,.lb-next{top:auto;bottom:8px;transform:none;background:rgba(11,12,10,.6)}}
+
+/* Rechtstexte */
+.legal-text{max-width:760px}
+.legal-text h2{font-size:1.8rem;margin:38px 0 12px}
+.legal-text h3{font-size:1.3rem;margin:24px 0 8px}
+.legal-text p,.legal-text li{color:var(--ink);margin-bottom:10px}
+.legal-text ul{padding-left:22px}
+.legal-text .hinweis{background:#fff8dc;border-left:4px solid #e3c34d;padding:14px 16px;margin:20px 0;font-size:.95rem}
+
+.testmodus{background:#fff3c4;color:#5b4b00;font-size:.85rem;font-weight:600;text-align:center;padding:7px 16px}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .bande .track{white-space:normal}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<div class="testmodus" id="testmodus" hidden></div>
+
+<div class="usp" role="note">
+  <ul class="wrap">
+    <li>Original Coerver Methode</li>
+    <li>Trikot und Verpflegung inklusive</li>
+    <li>Für Jungen und Mädchen von 5 bis 14</li>
+    <li>Camps in ganz Sachsen</li>
+  </ul>
+</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#/" aria-label="Coerver Coaching Sachsen, zur Startseite">
+      <img src="bilder/logo-badge.webp" alt="" width="314" height="400">
+      <span class="tag"><strong>Coerver Sachsen</strong><span>Die Technikschule</span></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menü" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <ul class="menu" id="menu">
+      <li><a href="#termine">Termine</a></li>
+      <li><a href="#methode">Methode</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#/fotos" data-view="fotos">Fotos</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a class="btn" href="#termine">Jetzt anmelden</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="inhalt">
+<!-- ================= STARTSEITE ================= -->
+<div class="view" id="view-home">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-bg">
+      <img src="bilder/foto-gruppe-1166.webp" srcset="bilder/foto-gruppe-640.webp 640w, bilder/foto-gruppe-1166.webp 1166w" sizes="100vw" alt="" width="1166" height="600" fetchpriority="high">
+    </div>
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="sub">Coerver Coaching Sachsen</p>
+        <h1 id="hero-title">Mehr Ballgefühl. <span>Mehr Mut im 1 gegen 1.</span></h1>
+        <p class="lead">Fußballcamps nach der weltweit bekannten Coerver Methode. Für Kinder, die besser mit dem Ball umgehen und selbstbewusster spielen wollen.</p>
+        <div class="actions">
+          <a class="btn" href="#termine">Camp finden</a>
+          <a class="btn ghost" href="#methode">So trainieren wir</a>
+        </div>
+        <div class="countdown" id="countdown" aria-live="off"></div>
+      </div>
+      <div class="hero-art">
+        <img src="bilder/camp-badge.webp" alt="Coerver Coaching Camp Abzeichen" width="600" height="600">
+      </div>
+    </div>
+  </section>
+
+  <div class="bande" aria-hidden="true">
+    <div class="track">
+      <span>Ballgefühl</span><span>Finten</span><span>1 gegen 1</span><span>Schnelligkeit</span><span>Durchsetzen</span><span>Teamgeist</span><span>Coerver Coaching Sachsen</span>
+      <span>Ballgefühl</span><span>Finten</span><span>1 gegen 1</span><span>Schnelligkeit</span><span>Durchsetzen</span><span>Teamgeist</span><span>Coerver Coaching Sachsen</span>
+    </div>
+  </div>
+
+  <section class="intro">
+    <div class="wrap">
+      <img class="wordmark" src="bilder/logo-schrift.webp" alt="Coerver Coaching" width="900" height="169" loading="lazy">
+      <h2>Are you ready to play <em>the Coerver way?</em></h2>
+      <p>Du bist zwischen 5 und 14 Jahren und willst in den Ferien richtig besser werden? In unseren Camps trainierst du Ballkontrolle, Finten und Schnelligkeit in kleinen Gruppen. Unsere Trainer achten dabei genauso auf Fairness, Teamgeist und Spaß am Spiel.</p>
+    </div>
+  </section>
+
+  <section class="pillars" id="methode" aria-labelledby="pillars-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="kicker">Was du im Camp lernst</p>
+          <h2 id="pillars-title">Fünf Bausteine</h2>
+        </div>
+        <p class="muted">Jeder Trainingstag verbindet diese Bausteine. Die Übungen werden an Alter und Niveau der Gruppe angepasst.</p>
+      </div>
+      <ul class="pillar-grid">
+        <li class="pillar"><img src="bilder/icon-ball.webp" alt="" width="300" height="300" loading="lazy"><h3>Ballgefühl</h3><p>Viele Ballkontakte mit beiden Füßen, jeden Tag.</p></li>
+        <li class="pillar"><img src="bilder/icon-spieler.webp" alt="" width="300" height="300" loading="lazy"><h3>Finten &amp; 1 gegen 1</h3><p>Moves lernen, mit denen man am Gegner vorbeikommt.</p></li>
+        <li class="pillar"><img src="bilder/icon-laufen.webp" alt="" width="300" height="300" loading="lazy"><h3>Schnelligkeit</h3><p>Antritt, Richtungswechsel und schnelles Handeln mit Ball.</p></li>
+        <li class="pillar"><img src="bilder/icon-kraft.webp" alt="" width="300" height="300" loading="lazy"><h3>Durchsetzen</h3><p>Den Ball behaupten und im Zweikampf stark bleiben.</p></li>
+        <li class="pillar"><img src="bilder/icon-handschlag.webp" alt="" width="300" height="300" loading="lazy"><h3>Teamgeist</h3><p>Respekt, Fairplay und gemeinsam besser werden.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="signup" aria-labelledby="signup-title">
+    <div class="bg"><img src="bilder/foto-platz-band-1170.webp" srcset="bilder/foto-platz-band-640.webp 640w, bilder/foto-platz-band-1170.webp 1170w" sizes="100vw" alt="" width="1170" height="658" loading="lazy"></div>
+    <div class="wrap">
+      <img class="wiggle" src="bilder/logo-badge.webp" alt="" width="314" height="400" loading="lazy">
+      <div>
+        <h2 id="signup-title">Sicher dir jetzt deinen Platz <span>im nächsten Camp!</span></h2>
+        <p>Die Gruppen sind klein. Wer sich früh anmeldet, ist sicher dabei.</p>
+      </div>
+      <a class="btn" href="#termine">Termine ansehen</a>
+    </div>
+  </section>
+
+  <section class="wrap rows">
+    <div class="row">
+      <div class="media">
+        <div class="photo"><img src="bilder/foto-tor-800.webp" srcset="bilder/foto-tor-520.webp 520w, bilder/foto-tor-800.webp 800w" sizes="(max-width:860px) 100vw, 560px" alt="Junge im orangen Trikot dribbelt mit dem Ball aufs Tor zu" width="800" height="600" loading="lazy"></div>
+        <img class="sticker stempel" src="bilder/no1-stempel.webp" alt="" width="700" height="460" loading="lazy">
+      </div>
+      <div class="text">
+        <p class="kicker">Die Methode</p>
+        <h2>Die Nummer 1 für Fußballtechnik</h2>
+        <p>Die Coerver Methode wurde in den Niederlanden entwickelt und wird heute weltweit in Vereinen und Fußballschulen eingesetzt. Im Mittelpunkt steht der Spieler mit dem Ball.</p>
+        <ul class="checks">
+          <li>Aufbau in klaren Stufen, vom Ballgefühl bis zum Torabschluss</li>
+          <li>Viele Wiederholungen in kleinen Gruppen</li>
+          <li>Lernen durch Vormachen, Nachmachen und Spielen</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row flip">
+      <div class="media">
+        <div class="photo"><img src="bilder/foto-trainer-900.webp" srcset="bilder/foto-trainer-560.webp 560w, bilder/foto-trainer-900.webp 900w" sizes="(max-width:860px) 100vw, 560px" alt="Trainer erklärt einer Gruppe Kinder die nächste Übung" width="900" height="675" loading="lazy"></div>
+      </div>
+      <div class="text">
+        <p class="kicker">Unsere Trainer</p>
+        <h2>Lizenzierte Coerver Coaches</h2>
+        <p>Alle Trainer sind nach dem Coerver Programm ausgebildet. Sie erklären verständlich, korrigieren einzeln und sorgen dafür, dass jedes Kind mitkommt.</p>
+        <a class="btn dark" href="#kontakt">Frage an das Team stellen</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="media">
+        <div class="photo"><img src="bilder/foto-platz-1170.webp" srcset="bilder/foto-platz-600.webp 600w, bilder/foto-platz-1170.webp 1170w" sizes="(max-width:860px) 100vw, 560px" alt="Sonniger Fußballplatz mit Trainingsstationen und Minitoren" width="1170" height="878" loading="lazy"></div>
+        <img class="sticker drehen" src="bilder/camp-badge.webp" alt="" width="600" height="600" loading="lazy">
+      </div>
+      <div class="text">
+        <p class="kicker">In jedem Camp enthalten</p>
+        <h2>Ihr bringt die Schuhe mit, wir den Rest</h2>
+        <p>Ein Camp geht in der Regel über drei Tage mit Training am Vormittag und Nachmittag. Um alles andere kümmern wir uns.</p>
+        <ul class="checks">
+          <li><span><strong>Eigenes Trikot</strong> für jedes Kind, zum Behalten</span></li>
+          <li><span><strong>Verpflegung über den ganzen Tag</strong> mit Essen und Getränken</span></li>
+          <li><span><strong>Training in kleinen Gruppen</strong> mit lizenzierten Coerver Coaches</span></li>
+          <li><span><strong>Extras zum Dazubuchen</strong> wie Trinkflasche, Cap oder Ball, je nach Camp</span></li>
+        </ul>
+        <a class="btn" href="#termine">Termine ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="camps" id="termine" aria-labelledby="termine-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 id="termine-title">Camps &amp; Events</h2>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Nach Art filtern"></div>
+      </div>
+      <ul class="camp-list" id="campList" aria-live="polite">
+        <li class="skeleton"></li><li class="skeleton"></li>
+      </ul>
+      <h3 class="past-title" id="pastTitle" hidden>Vergangene Termine</h3>
+      <ul class="camp-list" id="pastList"></ul>
+    </div>
+  </section>
+
+  <section class="news" id="news" aria-labelledby="news-title">
+    <div class="wrap">
+      <div class="section-head"><h2 id="news-title">Neuigkeiten</h2></div>
+      <ul class="news-grid" id="newsList"></ul>
+    </div>
+  </section>
+
+  <section class="fotoband" aria-labelledby="fotoband-title">
+    <div class="wrap">
+      <div class="stack" aria-hidden="true">
+        <img src="bilder/foto-tor-520.webp" alt="" width="520" height="390" loading="lazy">
+        <img src="bilder/foto-gruppe-640.webp" alt="" width="640" height="329" loading="lazy">
+        <img src="bilder/foto-trainer-560.webp" alt="" width="560" height="420" loading="lazy">
+      </div>
+      <div>
+        <h2 id="fotoband-title">Fotos vom Camp herunterladen</h2>
+        <p>Nach jedem Camp bekommen alle Familien einen Zugangscode für die Bilder.</p>
+      </div>
+      <a class="btn dark" href="#/fotos">Code eingeben</a>
+    </div>
+  </section>
+
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div>
+        <h2 id="faq-title">Häufige Fragen</h2>
+        <p class="muted" style="margin-top:14px">Deine Frage ist nicht dabei? <a href="#kontakt" style="color:var(--forest);font-weight:700">Schreib uns einfach.</a></p>
+      </div>
+      <div>
+        <details><summary>Für wen sind die Camps?</summary><p>Für Jungen und Mädchen von 5 bis 14 Jahren. Vereinserfahrung ist keine Pflicht. Die Gruppen werden nach Alter und Niveau eingeteilt.</p></details>
+        <details><summary>Was ist im Preis enthalten?</summary><p>Jedes Kind bekommt ein eigenes Trikot. Über den ganzen Tag ist für Essen und Getränke gesorgt. Dazu kommt das Training in kleinen Gruppen mit lizenzierten Coerver Coaches.</p></details>
+        <details><summary>Was muss mein Kind mitbringen?</summary><p>Sportkleidung, Fußballschuhe für Rasen oder Kunstrasen, Schienbeinschoner und wetterfeste Kleidung. Das Trikot gibt es im Camp.</p></details>
+        <details><summary>Kann ich Extras dazubestellen?</summary><p>Je nach Camp gibt es eine Trinkflasche, ein Cap oder einen Ball. Was angeboten wird und was es kostet, steht auf der Seite des jeweiligen Camps.</p></details>
+        <details><summary>Wie läuft die Anmeldung?</summary><p>Klick beim gewünschten Termin auf „Details und Anmeldung“ und dann auf „Jetzt anmelden“. Danach bekommst du eine Bestätigung mit allen Infos zum Ablauf.</p></details>
+        <details><summary>Was passiert, wenn ein Camp ausgebucht ist?</summary><p>Schreib uns über das Kontaktformular. Wir setzen dich auf die Warteliste und melden uns, sobald ein Platz frei wird.</p></details>
+        <details><summary>Wie bekomme ich die Fotos vom Camp?</summary><p>Nach dem Camp schicken wir allen Familien einen Zugangscode. Unter „Fotos“ gibst du ihn ein und kannst die Bilder ansehen und herunterladen. Die Fotos stehen nur für eine begrenzte Zeit bereit.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt" aria-labelledby="kontakt-title">
+    <div class="wrap">
+      <div>
+        <h2 id="kontakt-title">Wir sind für dich da</h2>
+        <p class="muted" style="margin-top:14px">Fragen zu Camps, Training im Verein oder einer Kooperation? Melde dich bei uns.</p>
+        <div class="ways" id="ways"></div>
+      </div>
+      <form class="kontakt" id="contactForm" novalidate>
+        <h3>Nachricht senden</h3>
+        <label>Name<input id="f-name" name="name" autocomplete="name" required placeholder="Vor- und Nachname"></label>
+        <label>E-Mail<input id="f-mail" name="email" type="email" autocomplete="email" required placeholder="name@beispiel.de"></label>
+        <label>Thema<select id="f-topic" name="thema"><option>Frage zu einem Camp</option><option>Anmeldung zu einem Camp</option><option>Warteliste</option><option>Training im Verein</option><option>Sonstiges</option></select></label>
+        <label>Nachricht<textarea id="f-msg" name="nachricht" rows="5" required placeholder="Deine Nachricht"></textarea></label>
+        <div class="hp" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn" type="submit" id="f-send">Nachricht senden</button>
+        <p class="form-note" id="formNote" role="status" hidden></p>
+        <p class="small">Mit dem Absenden werden deine Angaben zur Bearbeitung der Anfrage gespeichert. Mehr dazu im <a href="#/datenschutz">Datenschutz</a>.</p>
+      </form>
+    </div>
+  </section>
+  <section class="connect" id="social" aria-labelledby="connect-title">
+    <div class="wrap">
+      <h2 id="connect-title">Stay connected</h2>
+      <p class="muted">Folge uns für Camp-Eindrücke, neue Termine und Aktionen.</p>
+      <ul class="logo-row square">
+        <li><a href="https://www.facebook.com/coerver.ost" target="_blank" rel="noopener"><img src="bilder/social-facebook.webp" alt="Coerver Sachsen auf Facebook" width="89" height="89" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/coerver.sachsen/" target="_blank" rel="noopener"><img src="bilder/social-instagram.webp" alt="Coerver Sachsen auf Instagram" width="89" height="89" loading="lazy"></a></li>
+      </ul>
+      <p class="partner-label">Unsere Partner</p>
+      <ul class="logo-row wide">
+        <li><a href="https://trymoin.de/?p=ryL2dmPqj" target="_blank" rel="sponsored noopener"><img class="moin" src="bilder/partner-moin.webp" alt="Partner: MOIN" width="89" height="89" loading="lazy"></a></li>
+        <li><a href="https://www.teamsportbedarf.de/?utm_source=Webgains&amp;wgu=1875_1683420_1792519682923_82d943bdd9&amp;wgexpiry=1824055682&amp;source=webgains&amp;siteid=1683420" target="_blank" rel="sponsored noopener"><img class="tsb" src="bilder/partner-teamsportbedarf.webp" alt="Partner: Teamsportbedarf.de" width="369" height="35" loading="lazy"></a></li>
+        <li><a href="https://www.11teamsports.com/de-de/?utm_source=webgains&amp;utm_medium=affiliate&amp;wgu=274615_1683420_1792519727249_ec56be3ab3&amp;wgexpiry=1824055727&amp;wg_id=1384740&amp;cname=1683420" target="_blank" rel="sponsored noopener"><img class="elf" src="bilder/partner-11teamsports.webp" alt="Partner: 11teamsports" width="326" height="42" loading="lazy"></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seo-text" aria-labelledby="seo-title">
+    <div class="wrap">
+      <h2 id="seo-title">Fußballcamps in Dresden und ganz Sachsen</h2>
+      <p>Coerver Coaching Sachsen veranstaltet Fußballcamps und Feriencamps für Jungen und Mädchen von 5 bis 14 Jahren: Ostercamp, Sommercamp, Herbstcamp und Wintercamp in den Schulferien, Fußballschule und Techniktraining für Kinder und Jugendliche in Dresden, im Umland und in ganz Sachsen. Im Fußballtraining nach der Coerver Methode stehen Ballkontrolle, Ballgefühl, Dribbling, Finten, Tricks, 1 gegen 1, Passspiel, Torschuss, Schnelligkeit und Koordination im Mittelpunkt. Unsere lizenzierten Coerver Coaches trainieren in kleinen Gruppen, für Vereinsspieler und Anfänger. Im Camp-Preis enthalten sind Trikot und Verpflegung mit Essen und Getränken. Dazu gibt es die Coerver 1vs1 Liga, Fußball-Events und Kooperationen mit Fußballvereinen für Kinderfußball und Jugendfußball.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= CAMP-DETAIL ================= -->
+<div class="view" id="view-camp" hidden></div>
+
+<!-- ================= FOTOS ================= -->
+<div class="view" id="view-fotos" hidden>
+  <div class="wrap page">
+    <a class="back" href="#/"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>Zur Startseite</a>
+    <div class="foto-head">
+      <div>
+        <h1 class="page-title">Camp-Fotos</h1>
+        <p class="muted" style="margin-top:14px">Gib den Zugangscode ein, den du nach dem Camp per E-Mail bekommen hast. Groß- und Kleinschreibung ist egal.</p>
+      </div>
+      <form class="code-form" id="codeForm" novalidate>
+        <label>Zugangscode<input id="codeInput" name="code" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="z. B. SOMMER-2026" required></label>
+        <button class="btn" type="submit" id="codeBtn">Fotos anzeigen</button>
+      </form>
+    </div>
+    <p class="form-note err" id="codeNote" role="alert" hidden style="margin-top:16px"></p>
+    <div id="fotoResult" hidden>
+      <div class="foto-info">
+        <div>
+          <h2 id="fotoCamp"></h2>
+          <p class="muted" id="fotoMeta"></p>
+        </div>
+        <div class="zip-area">
+          <button class="btn dark" type="button" id="zipBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16"/></svg>
+            <span id="zipLabel">Alle Fotos herunterladen</span>
+          </button>
+          <div class="progress" id="zipProgress" hidden><i></i></div>
+          <span class="small" id="zipHint">Als ZIP-Datei. Am Handy besser einzelne Fotos laden.</span>
+        </div>
+      </div>
+      <ul class="gallery" id="gallery"></ul>
+      <p class="privacy-note">Die Fotos sind nur für die Familien der Teilnehmer gedacht. Bitte nutze sie privat und stelle keine Bilder anderer Kinder ins Internet oder in soziale Netzwerke.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= IMPRESSUM ================= -->
+<div class="view" id="view-impressum" hidden>
+  <div class="wrap page legal-text">
+    <a class="back" href="#/"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>Zur Startseite</a>
+    <h1 class="page-title">Impressum</h1>
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <p>Coerver Coaching Sachsen<br>Inhaber: Nico Sacher<br>Dresdner Straße 227<br>01705 Freital</p>
+    <h2>Kontakt</h2>
+    <p>Telefon: +49 178 314 55 85<br>E-Mail: sacher@coerver-coaching.de</p>
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+    <p>Nico Sacher<br><span class="ph">[Adresse bei Nico nachfragen]</span></p>
+    <h2>Lizenz</h2>
+    <p>Coerver® und die Coerver Logos sind Marken der Coerver Coaching.</p>
+    <h2>Verbraucherstreitbeilegung</h2>
+    <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+  </div>
+</div>
+
+<!-- ================= DATENSCHUTZ ================= -->
+<div class="view" id="view-datenschutz" hidden>
+  <div class="wrap page legal-text">
+    <a class="back" href="#/"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>Zur Startseite</a>
+    <h1 class="page-title">Datenschutz</h1>
+    <h2>1. Verantwortlicher</h2>
+    <p>Nico Sacher, Coerver Coaching Sachsen<br><span class="ph">[Adresse bei Nico nachfragen]</span><br>E-Mail: sacher@coerver-coaching.de</p>
+
+    <h2>2. Hosting</h2>
+    <p>Diese Website wird bei Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, USA gehostet. Beim Aufruf der Seite verarbeitet der Hoster technisch notwendige Daten wie IP-Adresse, Datum und Uhrzeit des Aufrufs und die aufgerufene Seite in Server-Logdateien. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (sichere und stabile Bereitstellung der Website). Eine Übermittlung in die USA ist möglich.</p>
+
+    <h2>3. Termine, Kontaktformular und Fotobereich über Google</h2>
+    <p>Termine und Neuigkeiten werden aus einer Google-Tabelle geladen. Dafür baut dein Browser beim Aufruf der Seite eine Verbindung zu Servern von Google auf (Google Apps Script, Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Dabei wird deine IP-Adresse an Google übermittelt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (aktuelle Termine ohne eigenes Datenbanksystem). Eine Übermittlung in die USA ist möglich.</p>
+
+    <h3>Kontaktformular</h3>
+    <p>Wenn du uns über das Formular schreibst, verarbeiten wir Name, E-Mail-Adresse, Thema und Nachricht, um deine Anfrage zu beantworten. Die Angaben werden in einer Google-Tabelle gespeichert und per E-Mail an uns weitergeleitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anfrage zu einem Camp) bzw. lit. f DSGVO (sonstige Anfragen). Wir löschen die Daten, wenn die Anfrage erledigt ist und keine Aufbewahrungspflichten bestehen, spätestens jedoch sechs Monate nach Abschluss der Anfrage.</p>
+
+    <h3>Fotobereich</h3>
+    <p>Fotos aus den Camps stellen wir den Familien der Teilnehmer in einem geschützten Bereich bereit. Die Bilder liegen in einem nicht öffentlichen Google-Drive-Ordner und werden nur nach Eingabe eines gültigen Zugangscodes angezeigt. Grundlage ist die Einwilligung der Erziehungsberechtigten bei der Anmeldung (Art. 6 Abs. 1 lit. a DSGVO). Die Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden, dann entfernen wir die betreffenden Bilder. Die Fotos werden 30 Tage nach dem Camp gelöscht.</p>
+
+    <h2>4. Externe Links</h2>
+    <p>Links zu Google Maps, WhatsApp, Instagram, Facebook oder einem externen Anmeldeformular öffnen fremde Seiten erst, wenn du sie anklickst. Dort gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Es werden keine Social-Media-Inhalte direkt auf dieser Seite eingebunden.</p>
+    <p>Die Links zu unseren Partnern (MOIN, Teamsportbedarf.de, 11teamsports) sind Partner-Links. Sie enthalten eine Kennung, an der der Partner bzw. das Partnerprogramm (z. B. Webgains) erkennt, dass du von unserer Seite kommst. Kaufst du dort ein, erhalten wir unter Umständen eine Provision. Für dich ändert sich der Preis nicht.</p>
+
+    <h2>5. Cookies, Analyse und Schriftarten</h2>
+    <p>Diese Website setzt keine Cookies und nutzt keine Analyse- oder Werbedienste. Die Schriftarten sind auf unserem Server gespeichert, es wird keine Verbindung zu Google Fonts aufgebaut.</p>
+
+    <h2>6. Deine Rechte</h2>
+    <ul>
+      <li>Auskunft über deine gespeicherten Daten (Art. 15 DSGVO)</li>
+      <li>Berichtigung (Art. 16), Löschung (Art. 17) und Einschränkung der Verarbeitung (Art. 18)</li>
+      <li>Datenübertragbarkeit (Art. 20) und Widerspruch gegen die Verarbeitung (Art. 21)</li>
+      <li>Widerruf einer Einwilligung (Art. 7 Abs. 3)</li>
+      <li>Beschwerde bei einer Aufsichtsbehörde, z. B. der Sächsischen Datenschutz- und Transparenzbeauftragten, Devrientstraße 5, 01067 Dresden</li>
+    </ul>
+    <p>Stand: 20.10.2026</p>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <img class="wordmark" src="bilder/logo-schrift.webp" alt="Coerver Coaching" width="900" height="169" loading="lazy">
+      <p>Fußballcamps und Techniktraining nach der Coerver Methode in Sachsen.</p>
+    </div>
+    <div><h4>Camps</h4><ul><li><a href="#termine">Alle Termine</a></li><li><a href="#methode">Methode</a></li><li><a href="#faq">Häufige Fragen</a></li></ul></div>
+    <div><h4>Service</h4><ul><li><a href="#/fotos">Camp-Fotos</a></li><li><a href="#news">Neuigkeiten</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+    <div><h4>Rechtliches</h4><ul><li><a href="#/impressum">Impressum</a></li><li><a href="#/datenschutz">Datenschutz</a></li></ul></div>
+  </div>
+  <div class="legal"><div class="wrap"><span>© <span id="year">2026</span> Coerver Coaching Sachsen</span><span>Keine Cookies, kein Tracking</span></div></div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto in Großansicht">
+  <div class="lb-top">
+    <span id="lbName"></span>
+    <button class="lb-btn" type="button" id="lbClose" aria-label="Schließen"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <div class="lb-stage" id="lbStage">
+    <button class="lb-btn lb-prev" type="button" id="lbPrev" aria-label="Vorheriges Foto"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img id="lbImg" alt="">
+    <button class="lb-btn lb-next" type="button" id="lbNext" aria-label="Nächstes Foto"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+  </div>
+  <div class="lb-bottom">
+    <button class="btn" type="button" id="lbDownload">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16"/></svg>
+      <span>Foto herunterladen</span>
+    </button>
+  </div>
+</div>
+
+<script src="js/jszip.min.js" defer></script>
+<script>
+/* =====================================================================
+ * HIER BEARBEITEN
+ * ===================================================================== */
+const EINSTELLUNGEN = {
+  // Web-App-Adresse aus Google Apps Script (endet auf /exec). Leer = Beispieldaten.
+  skriptUrl: "https://script.google.com/macros/s/AKfycbxbkrGfBj49GjjW5Y81VGTR9fsquD7R-jyQWiLYTetYztQaFohKvxLTsg8wOD2TMVI1qw/exec",
+  email: "sacher@coerver-coaching.de",
+  telefon: "+49 178 314 55 85",
+  // WhatsApp-Nummer nur mit Ziffern und Ländervorwahl, z. B. 4915112345678. Leer = kein WhatsApp-Knopf.
+  whatsapp: "491783145585",
+  region: "Dresden und ganz Sachsen"
+};
+
+/* Beispieldaten: werden nur genutzt, solange keine Google-Tabelle verbunden ist */
+const BEISPIEL = {
+  camps: [
+    {titel:"Herbstcamp Großkmehlen", art:"Herbstcamp", ort:"Großkmehlen", adresse:"Am Viehweg 1, 01990 Großkmehlen", start:"2026-10-19", ende:"2026-10-21", uhrzeit:"", preis:149, alter:"5 bis 14", ausgebucht:false, anmeldelink:"", beschreibung:"Drei Tage Techniktraining nach der Coerver Methode in kleinen Gruppen.", produkte:{trinkflasche:8, cap:15, ball:25}},
+    {titel:"Ostercamp Dresden (Beispiel)", art:"Ostercamp", ort:"Dresden", adresse:"Beispielstraße 1, 01099 Dresden", start:"2027-03-29", ende:"2027-03-31", uhrzeit:"9:00 bis 15:00 Uhr", preis:149, alter:"5 bis 14", ausgebucht:false, anmeldelink:"", beschreibung:"Beispiel-Eintrag zum Testen. Vor dem Livegang löschen oder anpassen.", produkte:{trinkflasche:8, cap:15, ball:null}},
+    {titel:"Sommercamp TSV Reinhardtsgrimma", art:"Sommercamp", ort:"Glashütte", adresse:"Gartenstraße 8, 01768 Glashütte", start:"2027-07-12", ende:"2027-07-14", uhrzeit:"", preis:149, alter:"5 bis 14", ausgebucht:false, anmeldelink:"", beschreibung:"Sommercamp beim TSV Reinhardtsgrimma.", produkte:{trinkflasche:8, cap:15, ball:25}},
+    {titel:"Coerver 1vs1 Liga", art:"1vs1 Liga", ort:"Dresden", adresse:"Sportforum Jägerpark, Dresden", start:"2026-08-16", ende:"2026-08-16", uhrzeit:"15:00 bis 17:00 Uhr", preis:null, alter:"", ausgebucht:false, anmeldelink:"", beschreibung:"Spieltag der Coerver 1vs1 Liga auf dem Borea-Kleinspielfeld.", produkte:{}},
+    {titel:"Sommercamp Juli 2026 (Beispiel Fotos)", art:"Sommercamp", ort:"Beispielort", adresse:"", start:"2026-07-13", ende:"2026-07-15", uhrzeit:"", preis:149, alter:"5 bis 14", ausgebucht:false, anmeldelink:"", beschreibung:"Vergangenes Beispielcamp. Dazu gibt es im Blatt Fotos einen Testcode.", produkte:{}}
+  ],
+  news: [
+    {datum:"2026-09-28", titel:"Anmeldung Herbstcamp offen", text:"Vom 19. bis 21. Oktober trainieren wir in Großkmehlen. Jetzt einen Platz sichern.", link:"#termine"},
+    {datum:"2026-07-16", titel:"Danke für ein starkes Sommercamp", text:"Die Fotos vom Sommercamp sind da. Den Zugangscode haben alle Familien per E-Mail bekommen.", link:"#/fotos"}
+  ]
+};
+
+/* =====================================================================
+ * Ab hier nichts mehr ändern
+ * ===================================================================== */
+(function(){
+"use strict";
+const $=s=>document.querySelector(s);
+const MONATE=["Jan","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"];
+const PRODUKTE=[
+  {key:"trinkflasche", name:"Trinkflasche", svg:'<svg viewBox="0 0 64 64" fill="none" stroke="#0b0c0a" stroke-width="2.6" stroke-linejoin="round"><rect x="25" y="4" width="14" height="7" rx="2" fill="#8db31e"/><path d="M27 11h10v5l5 6v34a4 4 0 01-4 4H26a4 4 0 01-4-4V22l5-6z" fill="#fff"/><path d="M22 30h20v14H22z" fill="#8db31e"/><path d="M27 37h10" stroke="#fff"/></svg>'},
+  {key:"cap", name:"Cap", svg:'<svg viewBox="0 0 64 64" fill="none" stroke="#0b0c0a" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><path d="M10 38c0-13 9-22 21-22s21 9 21 22z" fill="#0b0c0a"/><path d="M31 16v22M20 21c3 5 4 11 4 17M42 21c-3 5-4 11-4 17" stroke="#3a3d38"/><path d="M52 38c4 0 8 2 8 4s-6 3-14 3H10c-2 0-2-7 0-7z" fill="#8db31e"/><circle cx="31" cy="15" r="2.5" fill="#8db31e"/></svg>'},
+  {key:"ball", name:"Ball", svg:'<svg viewBox="0 0 64 64" fill="none" stroke="#0b0c0a" stroke-width="2.6" stroke-linejoin="round"><circle cx="32" cy="32" r="26" fill="#fff"/><path d="M32 21l9 6.5-3.4 10.5H26.4L23 27.5z" fill="#0b0c0a"/><path d="M32 21V8M41 27.5l12-4M37.6 38l7.4 10M26.4 38L19 48M23 27.5l-12-4" /><path d="M8 34l6-1M56 34l-6-1M32 58v-6" stroke-width="2"/><circle cx="32" cy="32" r="26" stroke="#8db31e" stroke-width="3" stroke-dasharray="6 9"/></svg>'}
+];
+const IC={
+  cal:'<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>',
+  pin:'<svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0119 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
+  clock:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  kid:'<svg viewBox="0 0 24 24"><circle cx="12" cy="6" r="3"/><path d="M6 21v-6a6 6 0 0112 0v6"/></svg>',
+  mail:'<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
+  phone:'<svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>',
+  chat:'<svg viewBox="0 0 24 24"><path d="M4 20l1.5-4A8 8 0 1112 20a8 8 0 01-4-1z"/></svg>',
+  shirt:'<svg viewBox="0 0 24 24"><path d="M8 3l4 2 4-2 5 4-3 4-2-1v11H8V10l-2 1-3-4z"/></svg>',
+  food:'<svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 0-3 3-3 6s1 4 3 4v8"/></svg>',
+  group:'<svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20v-2a6 6 0 0112 0v2M15 20v-1.5a4 4 0 016 0V20"/></svg>',
+  medal:'<svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="5"/><path d="M8.5 11L6 3h4l2 5 2-5h4l-2.5 8"/></svg>',
+  back:'<svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>',
+  ext:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></svg>'
+};
+
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const istPlatzhalter=s=>!s||/^\[.*\]$/.test(String(s).trim());
+const sichererLink=u=>{u=String(u||"").trim();if(/^#/.test(u))return u;if(/^https?:\/\//i.test(u))return u;return ""};
+const zuDatum=s=>{const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s||"");return m?new Date(+m[1],+m[2]-1,+m[3]):null};
+const fmt=s=>{const d=zuDatum(s);return d?d.toLocaleDateString("de-DE",{day:"2-digit",month:"2-digit",year:"numeric"}):""};
+const fmtLang=s=>{const d=zuDatum(s);return d?d.toLocaleDateString("de-DE",{weekday:"short",day:"numeric",month:"long",year:"numeric"}):""};
+const euro=n=>(n==null||n==="")?"":Number(n).toLocaleString("de-DE",{style:"currency",currency:"EUR",minimumFractionDigits:Number(n)%1?2:0,maximumFractionDigits:2});
+const heute=()=>{const d=new Date();d.setHours(0,0,0,0);return d};
+const slug=c=>(c.titel+"-"+c.start).toLowerCase().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const mapsLink=a=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(a);
+const zeitraum=c=>c.start===c.ende||!c.ende?fmt(c.start):fmt(c.start)+" bis "+fmt(c.ende);
+
+let CAMPS=[], NEWS=[], datenGeladen=false;
+
+/* ---------- Status eines Camps ---------- */
+function status(c){
+  const t=heute(), s=zuDatum(c.start), e=zuDatum(c.ende)||s;
+  if(e<t) return {key:"past",text:"Vorbei"};
+  if(s<=t) return {key:"live",text:"Läuft gerade"};
+  if(c.ausgebucht) return {key:"full",text:"Ausgebucht"};
+  const tage=Math.round((s-t)/864e5);
+  if(tage<=21) return {key:"soon",text:tage===1?"Morgen geht's los":"In "+tage+" Tagen"};
+  return {key:"open",text:"Anmeldung offen"};
+}
+const chip=st=>`<span class="chip ${st.key==="open"?"":esc(st.key)}">${esc(st.text)}</span>`;
+
+/* ---------- Daten laden ---------- */
+function normalisieren(c){
+  return {titel:String(c.titel||""), art:String(c.art||"Camp"), ort:String(c.ort||""), adresse:String(c.adresse||""),
+    start:String(c.start||""), ende:String(c.ende||c.start||""), uhrzeit:String(c.uhrzeit||""),
+    preis:(c.preis===""||c.preis==null||isNaN(+c.preis))?null:+c.preis, alter:String(c.alter||""), ausgebucht:!!c.ausgebucht,
+    anmeldelink:sichererLink(c.anmeldelink), beschreibung:String(c.beschreibung||""), produkte:c.produkte||{}};
+}
+async function laden(){
+  const url=EINSTELLUNGEN.skriptUrl.trim();
+  let daten=null, hinweis="";
+  if(url){
+    try{
+      const ctrl=new AbortController(); const tm=setTimeout(()=>ctrl.abort(),12000);
+      const r=await fetch(url+(url.includes("?")?"&":"?")+"aktion=daten",{signal:ctrl.signal});
+      clearTimeout(tm);
+      const j=await r.json();
+      if(j&&j.ok) daten=j; else throw new Error((j&&j.fehler)||"Antwort ungültig");
+    }catch(err){
+      console.warn("Termine konnten nicht geladen werden:",err);
+      hinweis="Die Termine konnten gerade nicht geladen werden. Bitte lade die Seite in ein paar Sekunden neu.";
+    }
+  }else{
+    daten=BEISPIEL;
+    const tm=$("#testmodus"); tm.textContent="Testmodus: Es werden Beispieldaten angezeigt, weil noch keine Google-Tabelle verbunden ist."; tm.hidden=false;
+  }
+  CAMPS=(daten&&daten.camps||[]).map(normalisieren).filter(c=>zuDatum(c.start));
+  NEWS=(daten&&daten.news||[]).filter(n=>n&&n.titel);
+  datenGeladen=true;
+  renderAlles(hinweis);
+  route();
+}
+
+/* ---------- Terminliste ---------- */
+let filter="Alle";
+function kommende(){return CAMPS.filter(c=>status(c).key!=="past").sort((a,b)=>zuDatum(a.start)-zuDatum(b.start))}
+function vergangene(){return CAMPS.filter(c=>status(c).key==="past").sort((a,b)=>zuDatum(b.start)-zuDatum(a.start)).slice(0,6)}
+function karte(c){
+  const st=status(c), d=zuDatum(c.start), past=st.key==="past";
+  const preis=c.preis!=null&&!past?`<div class="price">${esc(euro(c.preis))}<small> pro Kind</small></div>`:"";
+  return `<li class="camp${past?" past":""}">
+    <div class="date" aria-hidden="true"><b>${String(d.getDate()).padStart(2,"0")}</b><span>${MONATE[d.getMonth()]} ${d.getFullYear()}</span></div>
+    <div class="info">
+      <div class="type">${esc(c.art)}</div>
+      <h3><a href="#/camp/${esc(slug(c))}">${esc(c.titel)}</a></h3>
+      <div class="meta">
+        <span>${IC.cal}${esc(zeitraum(c))}</span>
+        ${c.ort?`<span>${IC.pin}${esc(c.ort)}</span>`:""}
+        ${c.alter?`<span>${IC.kid}${esc(c.alter)} Jahre</span>`:""}
+      </div>
+    </div>
+    <div class="side">${chip(st)}${preis}<span class="go"><span class="go-t">${past?"Details":"Details und Anmeldung"}</span><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></span></div>
+  </li>`;
+}
+function renderListe(hinweis){
+  const k=kommende(), v=vergangene();
+  const arten=["Alle",...new Set(k.map(c=>c.art))];
+  if(!arten.includes(filter)) filter="Alle";
+  $("#filters").innerHTML=arten.length>2?arten.map(t=>`<button type="button" aria-pressed="${t===filter}">${esc(t)}</button>`).join(""):"";
+  const liste=k.filter(c=>filter==="Alle"||c.art===filter);
+  $("#campList").innerHTML=hinweis?`<li class="empty">${esc(hinweis)}</li>`:
+    liste.length?liste.map(karte).join(""):`<li class="empty">Gerade sind keine Termine geplant. Neue Camps erscheinen hier, sobald die Anmeldung startet. <a href="#kontakt" style="color:var(--forest);font-weight:700">Frag uns nach dem nächsten Termin.</a></li>`;
+  $("#pastList").innerHTML=v.map(karte).join("");
+  $("#pastTitle").hidden=!v.length;
+}
+$("#filters").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  filter=b.textContent; renderListe("");
+});
+
+/* ---------- Countdown ---------- */
+let cdTimer=null;
+function renderCountdown(){
+  const cd=$("#countdown");
+  const live=CAMPS.find(c=>status(c).key==="live");
+  const next=kommende().find(c=>zuDatum(c.start)>new Date());
+  clearInterval(cdTimer);
+  if(live){
+    cd.innerHTML=`<span class="label">Gerade auf dem Platz: <a href="#/camp/${esc(slug(live))}">${esc(live.titel)}</a></span><span class="live">Camp läuft</span>`;
+    if(!next) return;
+  }
+  if(!next){cd.innerHTML="";return}
+  const ziel=zuDatum(next.start);
+  const tick=()=>{
+    let ms=Math.max(0,ziel-new Date());
+    const t=[Math.floor(ms/864e5),Math.floor(ms/36e5)%24,Math.floor(ms/6e4)%60,Math.floor(ms/1e3)%60];
+    const zellen=["Tage","Std","Min","Sek"].map((l,i)=>`<div class="cell"><b>${String(t[i]).padStart(2,"0")}</b><small>${l}</small></div>`).join("");
+    cd.innerHTML=`<span class="label">${live?`Gerade läuft <a href="#/camp/${esc(slug(live))}">${esc(live.titel)}</a>. `:""}Nächstes Camp: <a href="#/camp/${esc(slug(next))}">${esc(next.titel)}</a>, ab ${esc(fmt(next.start))}</span>`+zellen;
+  };
+  tick(); cdTimer=setInterval(tick,1000);
+}
+
+/* ---------- News ---------- */
+function renderNews(){
+  const sec=$("#news");
+  const n=NEWS.slice().sort((a,b)=>String(b.datum||"").localeCompare(String(a.datum||""))).slice(0,3);
+  sec.hidden=!n.length;
+  $("#newsList").innerHTML=n.map(x=>{
+    const l=sichererLink(x.link), extern=/^https?:/i.test(l);
+    return `<li class="news-item">${x.datum?`<time datetime="${esc(x.datum)}">${esc(fmtLang(x.datum))}</time>`:""}<h3>${esc(x.titel)}</h3>${x.text?`<p>${esc(x.text)}</p>`:""}${l?`<a class="more" href="${esc(l)}"${extern?' target="_blank" rel="noopener"':""}>Mehr erfahren</a>`:""}</li>`;
+  }).join("");
+}
+
+/* ---------- Kontaktwege ---------- */
+function renderKontakt(){
+  const E=EINSTELLUNGEN, w=[];
+  const val=s=>istPlatzhalter(s)?`<span class="ph">${esc(s||"[eintragen]")}</span>`:esc(s);
+  w.push(istPlatzhalter(E.email)?`<div class="way"><span class="ic">${IC.mail}</span><div><small>E-Mail</small><strong>${val(E.email)}</strong></div></div>`
+    :`<a class="way" href="mailto:${esc(E.email)}"><span class="ic">${IC.mail}</span><div><small>E-Mail</small><strong>${esc(E.email)}</strong></div></a>`);
+  w.push(istPlatzhalter(E.telefon)?`<div class="way"><span class="ic">${IC.phone}</span><div><small>Telefon</small><strong>${val(E.telefon)}</strong></div></div>`
+    :`<a class="way" href="tel:${esc(E.telefon.replace(/[^\d+]/g,""))}"><span class="ic">${IC.phone}</span><div><small>Telefon</small><strong>${esc(E.telefon)}</strong></div></a>`);
+  if(/^\d{8,15}$/.test(E.whatsapp||"")) w.push(`<a class="way" href="https://wa.me/${E.whatsapp}" target="_blank" rel="noopener"><span class="ic">${IC.chat}</span><div><small>WhatsApp</small><strong>Nachricht schreiben</strong></div></a>`);
+  w.push(`<div class="way"><span class="ic">${IC.pin}</span><div><small>Region</small><strong>${esc(E.region)}</strong></div></div>`);
+  $("#ways").innerHTML=w.join("");
+}
+
+/* ---------- Strukturierte Daten für Google (Termine als Events) ---------- */
+function renderSuchdaten(){
+  const alt=document.getElementById("ld-camps"); if(alt) alt.remove();
+  const k=kommende(); if(!k.length) return;
+  const basis=location.protocol.startsWith("http")?location.origin+location.pathname:"https://coerver-sachsen.de/";
+  const events=k.map(c=>{
+    const e={"@type":"SportsEvent","name":c.titel,"sport":"Fußball","startDate":c.start,"endDate":c.ende||c.start,
+      "eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+      "url":basis+"#/camp/"+slug(c),"organizer":{"@type":"SportsOrganization","name":"Coerver Coaching Sachsen","url":"https://coerver-sachsen.de/"}};
+    if(c.beschreibung) e.description=c.beschreibung;
+    if(c.adresse||c.ort) e.location={"@type":"Place","name":c.ort||c.adresse,"address":c.adresse||c.ort};
+    if(c.preis!=null) e.offers={"@type":"Offer","price":String(c.preis),"priceCurrency":"EUR","availability":c.ausgebucht?"https://schema.org/SoldOut":"https://schema.org/InStock","url":c.anmeldelink||basis+"#/camp/"+slug(c)};
+    return e;
+  });
+  const t=document.createElement("script"); t.type="application/ld+json"; t.id="ld-camps";
+  t.textContent=JSON.stringify({"@context":"https://schema.org","@graph":events});
+  document.head.appendChild(t);
+}
+
+function renderAlles(hinweis){renderListe(hinweis);renderCountdown();renderNews();renderKontakt();try{renderSuchdaten()}catch(err){console.warn(err)}}
+
+/* ---------- Camp-Detailseite ---------- */
+function renderCamp(id){
+  const v=$("#view-camp");
+  const c=CAMPS.find(x=>slug(x)===id);
+  if(!c){
+    v.innerHTML=`<div class="wrap page"><a class="back" href="#termine">${IC.back}Alle Termine</a><h1 class="page-title">Termin nicht gefunden</h1><p class="muted" style="margin-top:14px">Dieses Camp gibt es nicht mehr oder der Link ist veraltet. In der Terminliste findest du alle aktuellen Camps.</p><p style="margin-top:22px"><a class="btn" href="#termine">Zur Terminliste</a></p></div>`;
+    return "Termin nicht gefunden";
+  }
+  const st=status(c), past=st.key==="past";
+  const angebot=PRODUKTE.filter(p=>c.produkte&&c.produkte[p.key]!=null&&c.produkte[p.key]!=="");
+  const auswahl=!c.anmeldelink&&!past&&!c.ausgebucht;
+  const produktHtml=angebot.length&&!past?`<section>
+      <h2>Extras dazubuchen</h2>
+      <div class="products">${angebot.map(p=>auswahl
+        ?`<label class="product"><input type="checkbox" value="${esc(p.name)}" data-preis="${esc(c.produkte[p.key])}">${p.svg}<strong>${esc(p.name)}</strong><span class="p">${esc(euro(c.produkte[p.key]))}</span><span class="tick">Auswählen</span></label>`
+        :`<div class="product static">${p.svg}<strong>${esc(p.name)}</strong><span class="p">${esc(euro(c.produkte[p.key]))}</span></div>`).join("")}</div>
+      <p class="prod-note">${auswahl?"Wähle aus, was du dazu möchtest. Deine Auswahl wird in die Anmeldung übernommen.":"Die Extras wählst du bei der Anmeldung direkt mit aus."}</p>
+    </section>`:"";
+  let aktion;
+  if(past) aktion=`<p class="sum">Dieses Camp ist vorbei. Warst du dabei? Mit deinem Zugangscode kannst du die Fotos herunterladen.</p><a class="btn dark" href="#/fotos">Fotos ansehen</a>`;
+  else if(c.ausgebucht) aktion=`<span class="btn" aria-disabled="true">Ausgebucht</span><a class="btn line" href="#kontakt" data-anmeldung="${esc(c.titel)}" data-thema="Warteliste">Auf die Warteliste</a>`;
+  else if(c.anmeldelink) aktion=`<a class="btn" href="${esc(c.anmeldelink)}" target="_blank" rel="noopener">Jetzt anmelden ${IC.ext}</a><p class="sum">Die Anmeldung öffnet sich in einem neuen Fenster.</p>`;
+  else aktion=`<a class="btn" href="#kontakt" data-anmeldung="${esc(c.titel)}" data-thema="Anmeldung zu einem Camp">Jetzt anmelden</a><p class="sum" id="sumNote">Du kommst zum Anmeldeformular, der Termin ist schon eingetragen.</p>`;
+
+  v.innerHTML=`
+  <section class="detail-hero">
+    <div class="bg"><img src="bilder/foto-gruppe-1166.webp" srcset="bilder/foto-gruppe-640.webp 640w, bilder/foto-gruppe-1166.webp 1166w" sizes="100vw" alt="" width="1166" height="600"></div>
+    <div class="wrap">
+      <a class="back" href="#termine">${IC.back}Alle Termine</a>
+      <p class="type">${esc(c.art)}</p>
+      <h1 class="page-title">${esc(c.titel)}</h1>
+      <div class="chips">${chip(st)}</div>
+    </div>
+  </section>
+  <div class="wrap detail-grid">
+    <div class="detail-main">
+      ${c.beschreibung?`<section><h2>Darum geht's</h2><p class="muted" style="font-size:1.08rem">${esc(c.beschreibung)}</p></section>`:""}
+      <section>
+        <h2>Im Camp enthalten</h2>
+        <ul class="included">
+          <li><span class="ic">${IC.shirt}</span><div><strong>Eigenes Trikot</strong><span>Für jedes Kind, zum Behalten</span></div></li>
+          <li><span class="ic">${IC.food}</span><div><strong>Verpflegung</strong><span>Essen und Getränke über den ganzen Tag</span></div></li>
+          <li><span class="ic">${IC.group}</span><div><strong>Kleine Gruppen</strong><span>Eingeteilt nach Alter und Niveau</span></div></li>
+          <li><span class="ic">${IC.medal}</span><div><strong>Coerver Coaches</strong><span>Training nach der Original Methode</span></div></li>
+        </ul>
+      </section>
+      ${produktHtml}
+    </div>
+    <aside class="facts" aria-label="Eckdaten">
+      <dl>
+        <div>${IC.cal}<span><dt>Wann</dt><dd>${esc(c.start===c.ende?fmtLang(c.start):fmtLang(c.start)+" bis "+fmtLang(c.ende))}</dd></span></div>
+        ${c.uhrzeit?`<div>${IC.clock}<span><dt>Uhrzeit</dt><dd>${esc(c.uhrzeit)}</dd></span></div>`:""}
+        ${c.ort||c.adresse?`<div>${IC.pin}<span><dt>Wo</dt><dd>${esc(c.adresse||c.ort)}${c.adresse?`<br><a href="${esc(mapsLink(c.adresse))}" target="_blank" rel="noopener">In Google Maps öffnen</a>`:""}</dd></span></div>`:""}
+        ${c.alter?`<div>${IC.kid}<span><dt>Alter</dt><dd>${esc(c.alter)} Jahre</dd></span></div>`:""}
+      </dl>
+      ${c.preis!=null&&!past?`<div class="big-price">${esc(euro(c.preis))}<small> pro Kind</small></div>`:""}
+      ${aktion}
+    </aside>
+  </div>`;
+
+  // Ausgewählte Extras in die Zusammenfassung übernehmen
+  if(auswahl&&angebot.length){
+    const upd=()=>{
+      const sel=[...v.querySelectorAll(".product input:checked")];
+      const note=v.querySelector("#sumNote");
+      if(!note) return;
+      if(!sel.length){note.textContent="Du kommst zum Anmeldeformular, der Termin ist schon eingetragen.";return}
+      const summe=sel.reduce((s,i)=>s+Number(i.dataset.preis||0),0);
+      note.textContent="Mit Extras: "+sel.map(i=>i.value).join(", ")+" (zusammen "+euro(summe)+"). Wird ins Formular übernommen.";
+    };
+    v.querySelectorAll(".product input").forEach(i=>i.addEventListener("change",upd));
+  }
+  return c.titel;
+}
+
+/* Klick auf "Jetzt anmelden" ohne externen Link: Formular vorausfüllen */
+document.addEventListener("click",e=>{
+  const a=e.target.closest("[data-anmeldung]"); if(!a) return;
+  const camp=a.dataset.anmeldung, thema=a.dataset.thema||"Anmeldung zu einem Camp";
+  const extras=[...document.querySelectorAll("#view-camp .product input:checked")].map(i=>i.value);
+  const sel=$("#f-topic"); [...sel.options].forEach(o=>o.selected=o.text===thema);
+  const c=CAMPS.find(x=>x.titel===camp);
+  $("#f-msg").value=(thema==="Warteliste"?"Bitte setzt uns auf die Warteliste für: ":"Ich möchte mein Kind anmelden für: ")+camp+(c?" ("+zeitraum(c)+")":"")+
+    "\n\nName des Kindes:\nAlter des Kindes:\nTelefon:"+(extras.length?"\n\nExtras: "+extras.join(", "):"")+"\n";
+  setTimeout(()=>$("#f-name").focus({preventScroll:true}),450);
+});
+
+/* ---------- Kontaktformular ---------- */
+const form=$("#contactForm");
+form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  const note=$("#formNote"), btn=$("#f-send");
+  const zeig=(t,ok)=>{note.textContent=t;note.className="form-note "+(ok?"ok":"err");note.hidden=false};
+  const daten={aktion:"kontakt",name:form.name.value.trim(),email:form.email.value.trim(),thema:form.thema.value,nachricht:form.nachricht.value.trim(),website:form.website.value};
+  if(!daten.name||!daten.nachricht||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(daten.email)){zeig("Bitte Name, gültige E-Mail-Adresse und Nachricht ausfüllen.",false);return}
+  const url=EINSTELLUNGEN.skriptUrl.trim();
+  if(!url){
+    if(istPlatzhalter(EINSTELLUNGEN.email)){zeig("Testmodus: Das Formular ist noch nicht verbunden. Trag die Web-App-Adresse in den Einstellungen ein.",false);return}
+    location.href="mailto:"+EINSTELLUNGEN.email+"?subject="+encodeURIComponent("Website-Anfrage: "+daten.thema)+"&body="+encodeURIComponent(daten.nachricht+"\n\n"+daten.name+"\n"+daten.email);
+    return;
+  }
+  btn.disabled=true; btn.textContent="Wird gesendet …";
+  try{
+    const j=await post(daten);
+    if(j.ok){zeig("Danke! Deine Nachricht ist angekommen. Wir melden uns so schnell wie möglich.",true);form.reset()}
+    else zeig(j.fehler||"Die Nachricht konnte nicht gesendet werden. Bitte versuch es noch einmal.",false);
+  }catch(err){zeig("Keine Verbindung. Bitte prüfe dein Internet und versuch es noch einmal.",false)}
+  btn.disabled=false; btn.textContent="Nachricht senden";
+});
+
+async function post(obj,timeout){
+  const ctrl=new AbortController(); const tm=setTimeout(()=>ctrl.abort(),timeout||30000);
+  try{
+    const r=await fetch(EINSTELLUNGEN.skriptUrl.trim(),{method:"POST",body:JSON.stringify(obj),signal:ctrl.signal});
+    return await r.json();
+  }finally{clearTimeout(tm)}
+}
+
+/* =====================================================================
+ * Fotobereich
+ * ===================================================================== */
+const F={code:"",bilder:[],camp:"",vorschau:new Map(),warte:[],aktiv:0,lb:-1,demo:false};
+const DEMO_BILDER=[
+  {id:"demo-1",name:"Balltraining.webp",src:"bilder/foto-gruppe-1166.webp"},
+  {id:"demo-2",name:"Torschuss.webp",src:"bilder/foto-tor-800.webp"},
+  {id:"demo-3",name:"Besprechung.webp",src:"bilder/foto-trainer-900.webp"},
+  {id:"demo-4",name:"Platz.webp",src:"bilder/foto-platz-1170.webp"}
+];
+function b64zuBlob(b64,typ){
+  const bin=atob(b64), n=bin.length, u=new Uint8Array(n);
+  for(let i=0;i<n;i++) u[i]=bin.charCodeAt(i);
+  return new Blob([u],{type:typ||"image/jpeg"});
+}
+async function vorschauUrl(b){
+  if(F.demo) return DEMO_BILDER.find(x=>x.id===b.id).src;
+  let u=F.vorschau.get(b.id);
+  if(!u){u=URL.createObjectURL(await bildHolen(b.id,"vorschau"));F.vorschau.set(b.id,u)}
+  return u;
+}
+async function bildHolen(id,variante){
+  if(F.demo){const b=DEMO_BILDER.find(x=>x.id===id);const r=await fetch(b.src);return r.blob()}
+  let letzter;
+  for(let versuch=0;versuch<3;versuch++){
+    try{
+      const j=await post({aktion:"bild",code:F.code,id:id,variante:variante},60000);
+      if(j.ok) return b64zuBlob(j.daten,j.typ);
+      letzter=new Error(j.fehler||"Fehler");
+      if(/abgelaufen|nicht gültig|gesperrt/i.test(j.fehler||"")) break;
+    }catch(err){letzter=err}
+    await new Promise(r=>setTimeout(r,800*(versuch+1)));
+  }
+  throw letzter;
+}
+
+const codeForm=$("#codeForm"), codeNote=$("#codeNote");
+codeForm.addEventListener("submit",e=>{e.preventDefault();fotosLaden($("#codeInput").value)});
+
+async function fotosLaden(eingabe){
+  const code=String(eingabe||"").toUpperCase().replace(/\s+/g,"");
+  const btn=$("#codeBtn");
+  codeNote.hidden=true;
+  if(code.length<4){codeNote.textContent="Bitte gib deinen Zugangscode ein.";codeNote.hidden=false;$("#codeInput").focus();return}
+  const url=EINSTELLUNGEN.skriptUrl.trim();
+  btn.disabled=true; btn.textContent="Wird geprüft …";
+  try{
+    let j;
+    if(!url){
+      if(code!=="DEMO"){throw new Error("Testmodus: Ohne verbundene Google-Tabelle funktioniert nur der Code DEMO.")}
+      F.demo=true; j={ok:true,camp:"Vorschau mit Beispielbildern",gueltigBis:"",bilder:DEMO_BILDER.map(b=>({id:b.id,name:b.name,bytes:0}))};
+    }else{
+      F.demo=false; j=await post({aktion:"fotos",code:code},30000);
+    }
+    if(!j.ok) throw new Error(j.fehler||"Dieser Code ist nicht gültig.");
+    F.code=code; F.camp=j.camp||"Camp-Fotos"; F.bilder=j.bilder||[];
+    F.vorschau.forEach(u=>URL.revokeObjectURL(u)); F.vorschau.clear(); F.warte=[];
+    galerie(j);
+    if(location.hash!=="#/fotos") history.replaceState(null,"","#/fotos");
+  }catch(err){
+    codeNote.textContent=(err&&err.name==="AbortError")?"Die Verbindung hat zu lange gedauert. Bitte versuch es noch einmal.":
+      (err&&err.message&&!/fetch|network|json/i.test(err.message))?err.message:"Keine Verbindung zum Fotoserver. Bitte prüfe dein Internet und versuch es noch einmal.";
+    codeNote.hidden=false; $("#fotoResult").hidden=true;
+  }
+  btn.disabled=false; btn.textContent="Fotos anzeigen";
+}
+
+let beobachter=null;
+function galerie(j){
+  $("#fotoResult").hidden=false;
+  $("#fotoCamp").textContent=F.camp;
+  const n=F.bilder.length;
+  $("#fotoMeta").textContent=(n===1?"1 Foto":n+" Fotos")+(j.gueltigBis?", verfügbar bis "+fmt(j.gueltigBis):"");
+  $("#zipBtn").hidden=!n; $("#zipHint").hidden=!n;
+  $("#zipHint").textContent=F.demo&&location.protocol==="file:"?"Im Testmodus per Doppelklick nicht verfügbar. Online klappt der ZIP-Download.":"Als ZIP-Datei. Am Handy besser einzelne Fotos laden.";
+  $("#zipBtn").disabled=F.demo&&location.protocol==="file:";
+  const g=$("#gallery");
+  g.innerHTML=n?F.bilder.map((b,i)=>`<li class="tile laedt" data-i="${i}"><button type="button" aria-label="Foto ${i+1} von ${n} groß anzeigen"></button></li>`).join("")
+    :`<li class="empty" style="grid-column:1/-1">Für dieses Camp sind noch keine Fotos hochgeladen. Schau in ein paar Tagen noch einmal vorbei.</li>`;
+  if(beobachter) beobachter.disconnect();
+  beobachter=new IntersectionObserver(es=>es.forEach(en=>{
+    if(en.isIntersecting){beobachter.unobserve(en.target);F.warte.push(+en.target.dataset.i);pumpe()}
+  }),{rootMargin:"400px 0px"});
+  g.querySelectorAll(".tile").forEach(t=>beobachter.observe(t));
+  $("#fotoResult").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function pumpe(){
+  while(F.aktiv<3&&F.warte.length){
+    const i=F.warte.shift(); F.aktiv++;
+    vorschauLaden(i).finally(()=>{F.aktiv--;pumpe()});
+  }
+}
+async function vorschauLaden(i){
+  const b=F.bilder[i]; if(!b) return;
+  const tile=document.querySelector(`.tile[data-i="${i}"]`); if(!tile) return;
+  try{
+    const u=await vorschauUrl(b);
+    const img=new Image(); img.alt=""; img.decoding="async"; img.src=u;
+    img.onload=()=>{img.classList.add("da");tile.classList.remove("laedt")};
+    tile.querySelector("button").appendChild(img);
+  }catch(err){
+    tile.classList.remove("laedt");
+    tile.insertAdjacentHTML("beforeend",`<span class="fail">Foto konnte nicht geladen werden</span>`);
+  }
+}
+$("#gallery").addEventListener("click",e=>{
+  const t=e.target.closest(".tile"); if(t) zeigeGross(+t.dataset.i);
+});
+
+/* Großansicht */
+const lb=$("#lightbox"); let lbVorher=null;
+async function zeigeGross(i){
+  if(i<0||i>=F.bilder.length) return;
+  F.lb=i;
+  const b=F.bilder[i];
+  if(lb.hidden){lbVorher=document.activeElement;lb.hidden=false;document.body.style.overflow="hidden";$("#lbClose").focus()}
+  $("#lbName").textContent="Foto "+(i+1)+" von "+F.bilder.length+": "+b.name;
+  $("#lbPrev").hidden=i===0; $("#lbNext").hidden=i===F.bilder.length-1;
+  const img=$("#lbImg"); img.removeAttribute("src"); img.alt="Foto "+(i+1);
+  try{
+    const u=await vorschauUrl(b);
+    if(F.lb===i) img.src=u;
+  }catch(err){$("#lbName").textContent="Foto konnte nicht geladen werden"}
+}
+function schliesseGross(){lb.hidden=true;document.body.style.overflow="";F.lb=-1;if(lbVorher)lbVorher.focus()}
+$("#lbClose").addEventListener("click",schliesseGross);
+$("#lbPrev").addEventListener("click",()=>zeigeGross(F.lb-1));
+$("#lbNext").addEventListener("click",()=>zeigeGross(F.lb+1));
+$("#lbStage").addEventListener("click",e=>{if(e.target.id==="lbStage")schliesseGross()});
+document.addEventListener("keydown",e=>{
+  if(lb.hidden) return;
+  if(e.key==="Escape") schliesseGross();
+  else if(e.key==="ArrowLeft") zeigeGross(F.lb-1);
+  else if(e.key==="ArrowRight") zeigeGross(F.lb+1);
+  else if(e.key==="Tab"){
+    const f=[...lb.querySelectorAll("button:not([hidden])")]; if(!f.length) return;
+    const first=f[0], last=f[f.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+  }
+});
+let touchX=null;
+lb.addEventListener("touchstart",e=>{touchX=e.touches[0].clientX},{passive:true});
+lb.addEventListener("touchend",e=>{
+  if(touchX==null) return; const dx=e.changedTouches[0].clientX-touchX; touchX=null;
+  if(Math.abs(dx)>50) zeigeGross(F.lb+(dx<0?1:-1));
+});
+
+function speichern(blob,name){
+  const u=URL.createObjectURL(blob), a=document.createElement("a");
+  a.href=u; a.download=name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(u),60000);
+}
+$("#lbDownload").addEventListener("click",async()=>{
+  const b=F.bilder[F.lb]; if(!b) return;
+  const btn=$("#lbDownload"), lab=btn.querySelector("span");
+  btn.disabled=true; lab.textContent="Wird geladen …";
+  try{
+    if(F.demo){const a=document.createElement("a");a.href=DEMO_BILDER.find(x=>x.id===b.id).src;a.download=b.name;document.body.appendChild(a);a.click();a.remove()}
+    else speichern(await bildHolen(b.id,"original"),b.name);
+    lab.textContent="Gespeichert";
+  }
+  catch(err){lab.textContent="Fehlgeschlagen, nochmal versuchen"}
+  btn.disabled=false; setTimeout(()=>{lab.textContent="Foto herunterladen"},2500);
+});
+
+$("#zipBtn").addEventListener("click",async()=>{
+  if(!window.JSZip){alert("Der Download wird noch vorbereitet. Bitte versuch es gleich noch einmal.");return}
+  const btn=$("#zipBtn"), lab=$("#zipLabel"), bar=$("#zipProgress"), fill=bar.querySelector("i");
+  btn.disabled=true; bar.hidden=false; fill.style.width="0";
+  const zip=new JSZip(), namen=new Set(); let fehler=0;
+  for(let i=0;i<F.bilder.length;i++){
+    lab.textContent="Foto "+(i+1)+" von "+F.bilder.length+" …";
+    try{
+      const b=F.bilder[i]; let name=b.name||("foto-"+(i+1)+".jpg");
+      while(namen.has(name)) name=name.replace(/(\.[^.]+)?$/,"-"+(i+1)+"$1");
+      namen.add(name);
+      zip.file(name,await bildHolen(b.id,"original"));
+    }catch(err){fehler++}
+    fill.style.width=Math.round((i+1)/F.bilder.length*100)+"%";
+  }
+  lab.textContent="ZIP wird erstellt …";
+  try{
+    const blob=await zip.generateAsync({type:"blob",compression:"STORE"});
+    speichern(blob,"Coerver-Fotos-"+F.camp.replace(/[^\wäöüÄÖÜß-]+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"")+".zip");
+    lab.textContent=fehler?"Fertig, "+fehler+" Foto(s) fehlen":"Fertig";
+  }catch(err){lab.textContent="Fehlgeschlagen, nochmal versuchen"}
+  btn.disabled=false; setTimeout(()=>{lab.textContent="Alle Fotos herunterladen";bar.hidden=true},4000);
+});
+
+/* =====================================================================
+ * Seitensteuerung (Startseite, Camp, Fotos, Impressum, Datenschutz)
+ * ===================================================================== */
+const VIEWS=["home","camp","fotos","impressum","datenschutz"];
+let aktuelleView="home";
+function zeige(name){
+  VIEWS.forEach(v=>{$("#view-"+v).hidden=v!==name});
+  document.querySelectorAll(".menu a[data-view]").forEach(a=>{if(a.dataset.view===name)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  aktuelleView=name;
+}
+function route(){
+  const h=decodeURIComponent(location.hash||"");
+  const TITEL="Coerver Coaching Sachsen";
+  if(h.startsWith("#/camp/")){
+    zeige("camp");
+    if(!datenGeladen){$("#view-camp").innerHTML=`<div class="wrap page"><div class="skeleton" style="height:320px"></div></div>`;return}
+    const t=renderCamp(h.slice(7)); document.title=t+" | "+TITEL; window.scrollTo(0,0); return;
+  }
+  if(h.startsWith("#/fotos")){
+    const neu=aktuelleView!=="fotos";
+    zeige("fotos"); document.title="Camp-Fotos | "+TITEL;
+    if(neu) window.scrollTo(0,0);
+    const code=h.slice(8);
+    if(code){$("#codeInput").value=code.toUpperCase();history.replaceState(null,"","#/fotos");fotosLaden(code)}
+    else if(neu) setTimeout(()=>$("#codeInput").focus({preventScroll:true}),50);
+    return;
+  }
+  if(h==="#/impressum"||h==="#/datenschutz"){
+    const n=h.slice(2); zeige(n); document.title=(n==="impressum"?"Impressum":"Datenschutz")+" | "+TITEL; window.scrollTo(0,0); return;
+  }
+  // Startseite, ggf. mit Sprung zu einem Abschnitt
+  const warAndere=aktuelleView!=="home";
+  zeige("home"); document.title=TITEL;
+  const ziel=h&&h.length>1&&!h.startsWith("#/")?document.getElementById(h.slice(1)):null;
+  if(ziel) requestAnimationFrame(()=>ziel.scrollIntoView({behavior:warAndere?"auto":"smooth"}));
+  else if(warAndere||h==="#/") window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+
+/* Gleicher Link nochmal geklickt (z. B. zweimal #termine): trotzdem hinscrollen */
+document.addEventListener("click",e=>{
+  const a=e.target.closest('a[href^="#"]'); if(!a) return;
+  const h=a.getAttribute("href");
+  if(h===location.hash&&!h.startsWith("#/")){e.preventDefault();route()}
+  if(h==="#/"&&location.hash==="#/"){e.preventDefault();window.scrollTo({top:0,behavior:"smooth"})}
+});
+
+/* Menü */
+const burger=$("#burger"), menu=$("#menu");
+burger.addEventListener("click",()=>{const o=menu.classList.toggle("open");burger.setAttribute("aria-expanded",o)});
+menu.addEventListener("click",e=>{if(e.target.closest("a")){menu.classList.remove("open");burger.setAttribute("aria-expanded","false")}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&menu.classList.contains("open")){menu.classList.remove("open");burger.setAttribute("aria-expanded","false");burger.focus()}});
+
+$("#year").textContent=new Date().getFullYear();
+renderKontakt();
+route();
+laden();
+})();
+</script>
+</body>
+</html>
