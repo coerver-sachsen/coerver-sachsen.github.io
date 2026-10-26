@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#0b0c0a">
 <link rel="icon" href="bilder/logo-badge.webp" type="image/webp">
 <link rel="preload" href="schriften/barlow-condensed-latin-800-italic.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="bilder/foto-hero-1170.webp" as="image" imagesrcset="bilder/foto-hero-640.webp 640w, bilder/foto-hero-1170.webp 1170w" imagesizes="100vw">
+<link rel="preload" href="bilder/foto-band-1166.webp" as="image" imagesrcset="bilder/foto-band-640.webp 640w, bilder/foto-band-1166.webp 1166w" imagesizes="100vw">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SportsOrganization","name":"Coerver Coaching Sachsen","sport":"Fußball",
  "url":"https://coerver-sachsen.de/","logo":"https://coerver-sachsen.de/bilder/logo-badge.webp",
@@ -110,7 +110,7 @@ header.site{position:sticky;top:0;z-index:50;background:var(--white);border-bott
 /* ===== Banner mit Foto ===== */
 .hero{position:relative;overflow:hidden;color:#fff;background:var(--black);isolation:isolate}
 .hero-bg{position:absolute;inset:0;z-index:-2}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
   linear-gradient(90deg,rgba(11,12,10,.94) 0%,rgba(11,12,10,.82) 38%,rgba(13,40,22,.55) 70%,rgba(15,107,52,.35) 100%)}
 .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding-block:76px 84px;min-height:min(640px,82vh)}
@@ -170,7 +170,7 @@ header.site{position:sticky;top:0;z-index:50;background:var(--white);border-bott
 /* ===== Anmeldeband mit Platz-Foto ===== */
 .signup{position:relative;color:#fff;background:var(--black);overflow:hidden;isolation:isolate}
 .signup .bg{position:absolute;inset:0;z-index:-2}
-.signup .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.signup .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 68%}
 .signup::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,12,10,.9),rgba(11,12,10,.7) 55%,rgba(11,12,10,.45))}
 .signup .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:36px;align-items:center;padding-block:54px}
 .signup .wiggle{width:104px;animation:wackeln 4.5s ease-in-out infinite;transform-origin:50% 90%;filter:drop-shadow(0 14px 22px rgba(0,0,0,.5))}
@@ -495,7 +495,7 @@ footer .wordmark{width:220px;margin-bottom:16px;background:#fff;padding:10px 14p
 <div class="view" id="view-home">
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-bg">
-      <img src="bilder/foto-hero-1170.webp" srcset="bilder/foto-hero-640.webp 640w, bilder/foto-hero-1170.webp 1170w" sizes="100vw" alt="" width="1170" height="602" fetchpriority="high">
+      <img src="bilder/foto-band-1166.webp" srcset="bilder/foto-band-640.webp 640w, bilder/foto-band-1166.webp 1166w" sizes="100vw" alt="" width="1166" height="656" fetchpriority="high">
     </div>
     <div class="wrap">
       <div class="hero-text">
@@ -549,7 +549,7 @@ footer .wordmark{width:220px;margin-bottom:16px;background:#fff;padding:10px 14p
   </section>
 
   <section class="signup" aria-labelledby="signup-title">
-    <div class="bg"><img src="bilder/foto-band-1166.webp" srcset="bilder/foto-band-640.webp 640w, bilder/foto-band-1166.webp 1166w" sizes="100vw" alt="" width="1166" height="656" loading="lazy"></div>
+    <div class="bg"><img src="bilder/foto-hero-1170.webp" srcset="bilder/foto-hero-640.webp 640w, bilder/foto-hero-1170.webp 1170w" sizes="100vw" alt="" width="1170" height="602" loading="lazy"></div>
     <div class="wrap">
       <img class="wiggle" src="bilder/logo-badge.webp" alt="" width="314" height="400" loading="lazy">
       <div>
